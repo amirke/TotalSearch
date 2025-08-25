@@ -83,17 +83,12 @@ document.querySelectorAll('.pricing-card').forEach(card => {
 // Download Button Click Handlers
 document.querySelectorAll('.btn-download').forEach(button => {
     button.addEventListener('click', function(e) {
-        e.preventDefault();
-        
-        // Show download modal or redirect to actual download
+        // Allow the download to proceed normally
         const platform = this.textContent.includes('Windows') ? 'Windows' : 
                         this.textContent.includes('macOS') ? 'macOS' : 'Linux';
         
-        // For now, show an alert - replace with actual download logic
-        alert(`Download for ${platform} will be available soon!`);
-        
         // Track download attempt (replace with actual analytics)
-        console.log(`Download attempted for ${platform}`);
+        console.log(`Download started for ${platform}`);
     });
 });
 
