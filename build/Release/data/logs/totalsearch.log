@@ -1,0 +1,465 @@
+[11:31:02.174] [INFO] Logger initialized
+[11:31:02.175] [INFO] TotalSearch application started
+[11:31:02.991] [INFO] MainWindow: Applied default pane sizes
+[11:31:02.994] [INFO] KSearchBun: Constructor called
+[11:31:02.994] [INFO] KSearchBun: Loaded search parameters from INI file
+[11:31:02.994] [INFO]   Fixed String: No
+[11:31:02.994] [INFO]   Add Pattern: 
+[11:31:02.994] [INFO]   Case Sensitive: No
+[11:31:02.994] [INFO]   Ignore Case: No
+[11:31:02.994] [INFO]   Smart Case: No
+[11:31:02.994] [INFO]   Include/Exclude: 
+[11:31:02.994] [INFO]   Keep Files in Cache: No
+[11:31:02.994] [INFO]   Highlight Color: #828282
+[11:31:02.994] [INFO] KSearchBun: Main window reference set
+[11:31:02.994] [INFO] KSearchBun: Constructor called
+[11:31:02.994] [INFO] KSearchBun: Loaded search parameters from INI file
+[11:31:02.994] [INFO]   Fixed String: No
+[11:31:02.994] [INFO]   Add Pattern: 
+[11:31:02.994] [INFO]   Case Sensitive: No
+[11:31:02.994] [INFO]   Ignore Case: No
+[11:31:02.994] [INFO]   Smart Case: No
+[11:31:02.994] [INFO]   Include/Exclude: 
+[11:31:02.994] [INFO]   Keep Files in Cache: No
+[11:31:02.994] [INFO]   Highlight Color: #828282
+[11:31:02.994] [INFO] KSearchBun: Main window reference set
+[11:31:02.994] [INFO] MainWindow: Loaded UpDownLayout setting: true
+[11:31:02.994] [INFO] loadSettings: Cache setting loaded: DISABLED
+[11:31:02.995] [INFO] MainWindow: Using default Up/Down layout on startup
+[11:31:02.995] [INFO] MainWindow: Loaded search history from file - 2 patterns, 1 paths
+[11:31:02.995] [INFO] updateSearchFieldsFromHistory: Set pattern field to: RCB
+[11:31:02.995] [INFO] updateSearchFieldsFromHistory: Set path field to: C:/projects/cursor/testDataFromLiran
+[11:31:02.995] [INFO] MainWindow: Setting up auto-complete for pattern and path fields
+[11:31:02.995] [INFO] MainWindow: Applied pattern completer to pattern field
+[11:31:02.995] [INFO] MainWindow: Applied path completer to path field
+[11:31:02.995] [INFO] MainWindow: Updated pattern completer with 2 suggestions
+[11:31:02.995] [INFO] MainWindow: Updated path completer with 1 suggestions
+[11:31:02.995] [INFO] MainWindow: Auto-complete setup completed
+[11:31:07.225] [INFO] KSearch.cpp-KSsearchDo: START
+[11:31:07.225] [INFO] KSearch.cpp-updateSearchState: START
+[11:31:07.225] [INFO] KSearch-updateSearchState: Search state updated to: Searching... (Lamp: #28a745)
+[11:31:07.227] [INFO] KSearch.cpp-setSearchButton: START
+[11:31:07.227] [INFO] KSearch-setSearchButton: setSearchButton called with state=1
+[11:31:07.227] [INFO] KSearch-setSearchButton: Search button set to SEARCHING state
+[11:31:07.228] [INFO] KSearch-setSearchButton: Total function time: 1 ms
+[11:31:07.228] [INFO] KSearch.cpp-setSearchButton: END
+[11:31:07.228] [INFO] KSearch.cpp-setStopButton: START
+[11:31:07.229] [INFO] KSearch-setStopButton: setStopButton called with state=1
+[11:31:07.229] [INFO] KSearch-setStopButton: Stop button set to ENABLED state
+[11:31:07.230] [INFO] KSearch-setStopButton: Total function time: 1 ms
+[11:31:07.230] [INFO] KSearch.cpp-setStopButton: END
+[11:31:07.231] [INFO] KSearch-updateSearchState: Set search results lamp to active (searching)
+[11:31:07.231] [INFO] KSearch.cpp-updateSearchState: END
+[11:31:07.231] [INFO] KSearch-updateSearchState: Function completed successfully
+[11:31:07.231] [INFO] KSearch.cpp-KCompleteCleanUp: START
+[11:31:07.231] [INFO] KSearch-KCompleteCleanUp: Starting cleanup process
+[11:31:07.231] [INFO] KCompleteCleanUp: In normal state, performing conservative cleanup
+[11:31:07.231] [INFO] KCompleteCleanUp: Clearing extra highlights
+[11:31:07.231] [INFO] ScintillaEdit: Clearing extra highlights
+[11:31:07.231] [INFO] ScintillaEdit: Cleared tracked highlighted ranges
+[11:31:07.231] [INFO] KCompleteCleanUp: Extra highlights cleared successfully
+[11:31:07.231] [INFO] KCompleteCleanUp: Clearing KSearchBun data
+[11:31:07.231] [INFO] KSearchBun: Starting clearAllData
+[11:31:07.231] [INFO] KSearchBun: Data structures cleared
+[11:31:07.231] [INFO] KSearchBun: All data cleared successfully
+[11:31:07.231] [INFO] KCompleteCleanUp: KSearchBun data cleared successfully
+[11:31:07.231] [INFO] KCompleteCleanUp: Clearing file cache structure and forcing memory release
+[11:31:07.231] [INFO] KCompleteCleanUp: Non-cache file path tracking cleared
+[11:31:07.232] [INFO] KCompleteCleanUp: File cache cleared and memory cleanup triggered
+[11:31:07.232] [INFO] KCompleteCleanUp: Deleting all available workers
+[11:31:07.232] [INFO] KCompleteCleanUp: LogDataWorker was null, skipping deletion
+[11:31:07.232] [INFO] KCompleteCleanUp: Stopping background highlighting
+[11:31:07.232] [INFO] ScintillaEdit: Stopping background highlighting
+[11:31:07.232] [INFO] KCompleteCleanUp: Background highlighting stopped successfully
+[11:31:07.232] [INFO] KCompleteCleanUp: Clearing search results tree
+[11:31:07.232] [INFO] CollapsibleSearchResults: clear() called
+[11:31:07.232] [INFO] CollapsibleSearchResults: Memory usage at Clear - before: 47939584 bytes (45 MB)
+[11:31:07.233] [INFO] CollapsibleSearchResults: Memory usage at Clear - after processEvents: 47947776 bytes (45 MB)
+[11:31:07.233] [INFO] CollapsibleSearchResults: Memory usage at Clear - after: 47947776 bytes (45 MB)
+[11:31:07.233] [INFO] KCompleteCleanUp: Search results tree cleared successfully
+[11:31:07.233] [INFO] KCompleteCleanUp: Clearing preview file content and forcing memory release
+[11:31:07.233] [INFO] ScintillaEdit: User became active
+[11:31:07.234] [INFO] KCompleteCleanUp: Memory cleanup commands sent to fileContentView
+[11:31:07.234] [INFO] KCompleteCleanUp: File Viewer pane title reset to default
+[11:31:07.234] [INFO] KCompleteCleanUp: Cleanup completed successfully
+[11:31:07.234] [INFO] KCompleteCleanUp: Total function time: 3 ms
+[11:31:07.234] [INFO] KSearch.cpp-KCompleteCleanUp: END
+[11:31:07.234] [INFO] KSearch.cpp-addToSearchHistory: START
+[11:31:07.234] [INFO] KSearch-addToSearchHistory: Added pattern 'RCB' and path 'C:/projects/cursor/testDataFromLiran' to history
+[11:31:07.234] [INFO] KSearch.cpp-addToPatternHistory: START
+[11:31:07.234] [INFO] KSearch-addToPatternHistory: Adding pattern to history: RCB
+[11:31:07.234] [INFO] MainWindow: Updated pattern completer with 2 suggestions
+[11:31:07.235] [INFO] MainWindow: Saved search history to file - 2 patterns, 1 paths
+[11:31:07.241] [INFO] KSearch-addToPatternHistory: Pattern history updated, total items: 2
+[11:31:07.241] [INFO] KSearch-addToPatternHistory: Total function time: 6 ms
+[11:31:07.241] [INFO] KSearch.cpp-addToPatternHistory: END
+[11:31:07.241] [INFO] KSearch.cpp-addToPathHistory: START
+[11:31:07.241] [INFO] KSearch-addToPathHistory: Adding path to history: C:/projects/cursor/testDataFromLiran
+[11:31:07.241] [INFO] MainWindow: Updated path completer with 1 suggestions
+[11:31:07.241] [INFO] MainWindow: Saved search history to file - 2 patterns, 1 paths
+[11:31:07.252] [INFO] KSearch-addToPathHistory: Path history updated, total items: 1
+[11:31:07.252] [INFO] KSearch-addToPathHistory: Total function time: 11 ms
+[11:31:07.252] [INFO] KSearch.cpp-addToPathHistory: END
+[11:31:07.253] [INFO] KSearch-addToSearchHistory: Total function time: 11 ms
+[11:31:07.253] [INFO] KSearch.cpp-addToSearchHistory: END
+[11:31:07.253] [INFO] KSearch.cpp-applyExtraHighlightParamsRules: START
+[11:31:07.253] [INFO] KSearch-applyExtraHighlightParamsRules: No rules currently set, loading from INI file
+[11:31:07.253] [INFO] KSearch-applyExtraHighlightParamsRules: Loaded 1 rules from settings
+[11:31:07.253] [INFO] KSearch-applyExtraHighlightParamsRules: Loaded 1 rules from INI file
+[11:31:07.253] [INFO] KSearch-applyExtraHighlightParamsRules: Global options - Case Sensitive: No, Highlight Sentence: Yes, Use RG Highlight: No, Use Qt Highlight: No, Use Viewport Highlight: Yes
+[11:31:07.253] [INFO] KSearch-applyExtraHighlightParamsRules: Total function time: 0 ms
+[11:31:07.253] [INFO] KSearch.cpp-applyExtraHighlightParamsRules: END
+[11:31:07.253] [INFO] KSearchBun: Updated persistent search parameters
+[11:31:07.253] [INFO]   Path: C:/projects/cursor/testDataFromLiran
+[11:31:07.253] [INFO]   Pattern: RCB
+[11:31:07.253] [INFO]   Fixed String: No
+[11:31:07.253] [INFO]   Add Pattern: 
+[11:31:07.253] [INFO]   Case Sensitive: No
+[11:31:07.253] [INFO]   Ignore Case: No
+[11:31:07.253] [INFO]   Smart Case: No
+[11:31:07.253] [INFO]   Include/Exclude: 
+[11:31:07.253] [INFO]   Keep Files in Cache: No
+[11:31:07.253] [INFO]   Highlight Color: #828282
+[11:31:07.253] [INFO] KSsearchDo: Updated persistent search parameters in KSearchBun (path and pattern from UI, others from INI)
+[11:31:07.253] [INFO] KSsearchDo: About to enter K_RGresults_method3_async at 0 ms
+[11:31:07.253] [INFO] KSearchBun: ===THREAD=== K_RGresults_method3_async (Asynchronous) for path: C:/projects/cursor/testDataFromLiran <<<<<STARTed<<<<<
+[11:31:07.254] [INFO] KSearchBun: ===THREAD=== K_RGresults_method3_async (Asynchronous) for path: C:/projects/cursor/testDataFromLiran >>>>>ENDed>>>>>
+[11:31:07.254] [INFO] KSsearchDo: Stage 1 - Async ripgrep completed in 29 ms
+[11:31:07.254] [INFO] KSsearchDo: About to enter addSearchResults at 0 ms
+[11:31:07.254] [INFO] KSsearchDo: Async search started, waiting for completion...
+[11:31:07.254] [INFO] KSsearchDo: Total function time: 0 ms
+[11:31:07.254] [INFO] KSearch.cpp-KSsearchDo: END
+[11:31:07.254] [INFO] KSearchBun: ===THREAD=== K_RGresults_method3 (Synchronous) for path: C:/projects/cursor/testDataFromLiran <<<<<STARTed<<<<<
+[11:31:07.254] [DEBUG] KSearchBun: Method3 - 112 Using persistent RGSearchParams:
+[11:31:07.254] [DEBUG]   path: C:/projects/cursor/testDataFromLiran
+[11:31:07.254] [DEBUG]   pattern: RCB
+[11:31:07.254] [DEBUG]   fixed_string: false
+[11:31:07.254] [DEBUG]   add_pattern: 
+[11:31:07.254] [DEBUG]   case_sensitive: false
+[11:31:07.254] [DEBUG]   ignore_case: false
+[11:31:07.254] [DEBUG]   smart_case: false
+[11:31:07.254] [DEBUG]   incl_exclude: 
+[11:31:07.254] [DEBUG]   keep_files_in_cache: false
+[11:31:07.254] [DEBUG]   highlight_color: #828282
+[11:31:07.254] [INFO] KSearchBun: Updating Rule 1 with combined pattern: 'RCB'
+[11:31:07.255] [INFO] KSearchBun: Rule 1 updated in INI file with pattern: 'RCB'
+[11:31:07.255] [INFO] KSearch: Updating Rule 1 pattern to: 'RCB'
+[11:31:07.255] [INFO] KSearch: Updated Rule 1 in in-memory rules with pattern: 'RCB'
+[11:31:07.260] [INFO] KSearchBun: Method3 - Ripgrep command: lib\rg.exe -a -n --threads 0 --mmap --column --byte-offset --stats --heading --json -e RCB C:/projects/cursor/testDataFromLiran
+[11:31:08.243] [INFO] KSearchBun: Method3 ENDed - Received 5498557 characters from ripgrep
+[11:31:08.243] [INFO] KSsearchDo: Async search completed, starting addSearchResults
+[11:31:08.243] [INFO] KSearch.cpp-updateSearchState: START
+[11:31:08.244] [INFO] KSearch-updateSearchState: Search state updated to: Parsing search results... (Lamp: #17a2b8)
+[11:31:08.245] [INFO] ScintillaEdit: User became idle, starting continuous background highlighting
+[11:31:08.245] [INFO] KSearch.cpp-setSearchButton: START
+[11:31:08.246] [INFO] KSearch-setSearchButton: setSearchButton called with state=2
+[11:31:08.246] [INFO] KSearch-setSearchButton: Search button set to PROCESSING state
+[11:31:08.247] [INFO] KSearch-setSearchButton: Total function time: 1 ms
+[11:31:08.247] [INFO] KSearch.cpp-setSearchButton: END
+[11:31:08.247] [INFO] KSearch.cpp-setStopButton: START
+[11:31:08.247] [INFO] KSearch-setStopButton: setStopButton called with state=1
+[11:31:08.248] [INFO] KSearch-setStopButton: Stop button set to ENABLED state
+[11:31:08.249] [INFO] KSearch-setStopButton: Total function time: 1 ms
+[11:31:08.249] [INFO] KSearch.cpp-setStopButton: END
+[11:31:08.249] [INFO] KSearch-updateSearchState: Set parsing lamp to active (parsing)
+[11:31:08.249] [INFO] KSearch.cpp-updateSearchState: END
+[11:31:08.249] [INFO] KSearch-updateSearchState: Function completed successfully
+[11:31:08.249] [INFO] KSsearchDo: Setting button to Processing
+[11:31:08.249] [INFO] KSearch.cpp-updateSearchState: START
+[11:31:08.249] [INFO] KSearch-updateSearchState: Search state updated to: Parsing search results... (Lamp: #17a2b8)
+[11:31:08.251] [INFO] KSearch.cpp-setSearchButton: START
+[11:31:08.251] [INFO] KSearch-setSearchButton: setSearchButton called with state=2
+[11:31:08.251] [INFO] KSearch-setSearchButton: Search button set to PROCESSING state
+[11:31:08.252] [INFO] KSearch-setSearchButton: Total function time: 1 ms
+[11:31:08.252] [INFO] KSearch.cpp-setSearchButton: END
+[11:31:08.253] [INFO] KSearch.cpp-setStopButton: START
+[11:31:08.253] [INFO] KSearch-setStopButton: setStopButton called with state=1
+[11:31:08.253] [INFO] KSearch-setStopButton: Stop button set to ENABLED state
+[11:31:08.254] [INFO] KSearch-setStopButton: Total function time: 1 ms
+[11:31:08.254] [INFO] KSearch.cpp-setStopButton: END
+[11:31:08.254] [INFO] KSearch-updateSearchState: Set parsing lamp to active (parsing)
+[11:31:08.254] [INFO] KSearch.cpp-updateSearchState: END
+[11:31:08.254] [INFO] KSearch-updateSearchState: Function completed successfully
+[11:31:08.255] [INFO] addSearchResults: Function started
+[11:31:08.255] [INFO] CollapsibleSearchResults: clear() called
+[11:31:08.255] [INFO] CollapsibleSearchResults: Memory usage at Clear - before: 59502592 bytes (56 MB)
+[11:31:08.256] [INFO] CollapsibleSearchResults: Memory usage at Clear - after processEvents: 59502592 bytes (56 MB)
+[11:31:08.256] [INFO] CollapsibleSearchResults: Memory usage at Clear - after: 59502592 bytes (56 MB)
+[11:31:08.256] [INFO] addSearchResults: Starting async parsing
+[11:31:08.256] [INFO] CollapsibleSearchResults: addSearchResultsAsync started
+[11:31:08.256] [INFO] CollapsibleSearchResults: clear() called
+[11:31:08.256] [INFO] CollapsibleSearchResults: Memory usage at Clear - before: 59502592 bytes (56 MB)
+[11:31:08.257] [INFO] CollapsibleSearchResults: Memory usage at Clear - after processEvents: 59502592 bytes (56 MB)
+[11:31:08.257] [INFO] CollapsibleSearchResults: Memory usage at Clear - after: 59502592 bytes (56 MB)
+[11:31:08.257] [INFO] CollapsibleSearchResults: addSearchResultsAsync - clear completed
+[11:31:08.257] [INFO] CollapsibleSearchResults: Creating parse thread
+[11:31:08.257] [INFO] CollapsibleSearchResults: Parse thread created and started
+[11:31:08.257] [INFO] CollapsibleSearchResults: Starting background JSON parsing
+[11:31:08.257] [INFO] CollapsibleSearchResults: addSearchResultsAsync - parsing started in background
+[11:31:08.257] [INFO] addSearchResults: Function completed
+[11:31:08.257] [INFO] addSearchResults: Total function time: 2 ms
+[11:31:08.257] [INFO] KSsearchDo: addSearchResults called, waiting for parsing completion signal
+[11:31:08.257] [INFO] JsonParseWorker: START - parseJsonData
+[11:31:08.257] [INFO] JsonParseWorker: Memory usage at parseJsonData - start: 59547648 bytes (56 MB)
+[11:31:08.258] [INFO] CollapsibleSearchResults: onParsingStarted - SIGNAL RECEIVED!
+[11:31:08.258] [INFO] CollapsibleSearchResults: onParsingStarted - completed
+[11:31:08.264] [INFO] JsonParseWorker: Top-level split time: 6 ms for 13513 lines
+[11:31:08.264] [INFO] JsonParseWorker: About to call parseRGSummary
+[11:31:08.264] [INFO] JsonParseWorker: START - parseRGSummary
+[11:31:08.264] [INFO] JsonParseWorker: Last line extraction time: 0 ms
+[11:31:08.264] [INFO] JsonParseWorker: Last line length: 287 characters
+[11:31:08.264] [INFO] JsonParseWorker: Last line: {"data":{"elapsed_total":{"human":"0.751244s","nanos":751244500,"secs":0},"stats":{"bytes_printed":5496994,"bytes_searched":672040183,"elapsed":{"human":"0.777052s","nanos":777052300,"secs":0},"matched_lines":13504,"matches":13512,"searches":4,"searches_with_match":4}},"type":"summary"}
+[11:31:08.264] [INFO] JsonParseWorker: Summary processed - 📊 Found 13504 matches ( files: 4,  duration: 0.751244s )
+[11:31:08.264] [INFO] JsonParseWorker: parseRGSummary completed successfully
+[11:31:08.264] [INFO] JsonParseWorker: Total function time: 0 ms
+[11:31:08.264] [INFO] JsonParseWorker: parseRGSummary completed successfully
+[11:31:08.264] [INFO] JsonParseWorker: Total matched lines: 13504
+[11:31:08.264] [INFO] JsonParseWorker: START - parseJsonDataInternal
+[11:31:08.264] [INFO] JsonParseWorker: Memory usage at parseJsonDataInternal - start: 71966720 bytes (68 MB)
+[11:31:08.264] [INFO] CollapsibleSearchResults: onSummaryParsed - 📊 Found 13504 matches ( files: 4,  duration: 0.751244s ) (13504 lines)
+[11:31:08.264] [INFO] JsonParseWorker: Processing 13513 JSON lines
+[11:31:08.264] [INFO] CollapsibleSearchResults: Memory usage at Summary parsed: 71966720 bytes (68 MB)
+[11:31:08.264] [INFO] CollapsibleSearchResults: Progress tracking moved to main window
+[11:31:08.264] [INFO] CollapsibleSearchResults: onFileItemCreated - C:/projects/cursor/testDataFromLiran\2\ddsdws.txt
+[11:31:08.265] [INFO] JsonParseWorker: Processing 'end' type for file: C:/projects/cursor/testDataFromLiran\2\ddsdws.txt
+[11:31:08.265] [INFO] JsonParseWorker: End stats - C:/projects/cursor/testDataFromLiran\2\ddsdws.txt has 50 matches in 0.003391s
+[11:31:08.266] [INFO] JsonParseWorker: Processing 'end' type for file: C:/projects/cursor/testDataFromLiran\1\ddsdws.txt
+[11:31:08.266] [INFO] JsonParseWorker: End stats - C:/projects/cursor/testDataFromLiran\1\ddsdws.txt has 50 matches in 0.004202s
+[11:31:08.266] [INFO] JsonParseWorker: Processing 'end' type for file: C:/projects/cursor/testDataFromLiran\1\VC_2.0.26.6031_RASD_13-Mar-2025_14-10-36.txt
+[11:31:08.266] [INFO] JsonParseWorker: End stats - C:/projects/cursor/testDataFromLiran\1\VC_2.0.26.6031_RASD_13-Mar-2025_14-10-36.txt has 50 matches in 0.090630s
+[11:31:08.272] [INFO] CollapsibleSearchResults: onFileStatsUpdated - C:/projects/cursor/testDataFromLiran\2\ddsdws.txt (0.003391s, 50 lines)
+[11:31:08.272] [INFO] CollapsibleSearchResults: onFileItemCreated - C:/projects/cursor/testDataFromLiran\1\ddsdws.txt
+[11:31:08.277] [INFO] CollapsibleSearchResults: onFileStatsUpdated - C:/projects/cursor/testDataFromLiran\1\ddsdws.txt (0.004202s, 50 lines)
+[11:31:08.277] [INFO] CollapsibleSearchResults: onFileItemCreated - C:/projects/cursor/testDataFromLiran\1\VC_2.0.26.6031_RASD_13-Mar-2025_14-10-36.txt
+[11:31:08.281] [INFO] CollapsibleSearchResults: onFileStatsUpdated - C:/projects/cursor/testDataFromLiran\1\VC_2.0.26.6031_RASD_13-Mar-2025_14-10-36.txt (0.090630s, 50 lines)
+[11:31:08.281] [INFO] CollapsibleSearchResults: onFileItemCreated - C:/projects/cursor/testDataFromLiran\1\VC_2.0.26.6031_RASD_13-Mar-2025_14-15-07.txt
+[11:31:08.289] [INFO] CollapsibleSearchResults: onParsingProgress - 5% in 4 files
+[11:31:08.294] [INFO] CollapsibleSearchResults: onParsingProgress - 10% in 4 files
+[11:31:08.300] [INFO] CollapsibleSearchResults: onParsingProgress - 15% in 4 files
+[11:31:08.305] [INFO] CollapsibleSearchResults: onParsingProgress - 20% in 4 files
+[11:31:08.312] [INFO] CollapsibleSearchResults: onParsingProgress - 25% in 4 files
+[11:31:08.317] [INFO] MainWindow: Parsing progress update - 25% in 4 files
+[11:31:08.317] [INFO] MainWindow: Parsing progress update - 20% in 4 files
+[11:31:08.317] [INFO] MainWindow: Parsing progress update - 15% in 4 files
+[11:31:08.317] [INFO] MainWindow: Parsing progress update - 10% in 4 files
+[11:31:08.317] [INFO] MainWindow: Parsing progress update - 5% in 4 files
+[11:31:08.317] [INFO] CollapsibleSearchResults: onParsingProgress - 30% in 4 files
+[11:31:08.322] [INFO] MainWindow: Parsing progress update - 30% in 4 files
+[11:31:08.323] [INFO] CollapsibleSearchResults: onParsingProgress - 35% in 4 files
+[11:31:08.327] [INFO] MainWindow: Parsing progress update - 35% in 4 files
+[11:31:08.333] [INFO] CollapsibleSearchResults: onParsingProgress - 40% in 4 files
+[11:31:08.335] [INFO] MainWindow: Parsing progress update - 40% in 4 files
+[11:31:08.344] [INFO] CollapsibleSearchResults: onParsingProgress - 45% in 4 files
+[11:31:08.346] [INFO] MainWindow: Parsing progress update - 45% in 4 files
+[11:31:08.354] [INFO] CollapsibleSearchResults: onParsingProgress - 50% in 4 files
+[11:31:08.356] [INFO] MainWindow: Parsing progress update - 50% in 4 files
+[11:31:08.366] [INFO] CollapsibleSearchResults: onParsingProgress - 55% in 4 files
+[11:31:08.366] [INFO] MainWindow: Parsing progress update - 55% in 4 files
+[11:31:08.376] [INFO] CollapsibleSearchResults: onParsingProgress - 60% in 4 files
+[11:31:08.376] [INFO] MainWindow: Parsing progress update - 60% in 4 files
+[11:31:08.376] [INFO] CollapsibleSearchResults: onParsingProgress - 65% in 4 files
+[11:31:08.390] [INFO] MainWindow: Parsing progress update - 65% in 4 files
+[11:31:08.393] [INFO] CollapsibleSearchResults: onParsingProgress - 70% in 4 files
+[11:31:08.393] [INFO] MainWindow: Parsing progress update - 70% in 4 files
+[11:31:08.410] [INFO] CollapsibleSearchResults: onParsingProgress - 75% in 4 files
+[11:31:08.410] [INFO] MainWindow: Parsing progress update - 75% in 4 files
+[11:31:08.423] [INFO] CollapsibleSearchResults: onParsingProgress - 80% in 4 files
+[11:31:08.425] [INFO] MainWindow: Parsing progress update - 80% in 4 files
+[11:31:08.434] [INFO] CollapsibleSearchResults: onParsingProgress - 85% in 4 files
+[11:31:08.435] [INFO] MainWindow: Parsing progress update - 85% in 4 files
+[11:31:08.444] [INFO] CollapsibleSearchResults: onParsingProgress - 90% in 4 files
+[11:31:08.446] [INFO] MainWindow: Parsing progress update - 90% in 4 files
+[11:31:08.455] [INFO] CollapsibleSearchResults: onParsingProgress - 95% in 4 files
+[11:31:08.457] [INFO] MainWindow: Parsing progress update - 95% in 4 files
+[11:31:08.466] [INFO] JsonParseWorker: Processing 'end' type for file: C:/projects/cursor/testDataFromLiran\1\VC_2.0.26.6031_RASD_13-Mar-2025_14-15-07.txt
+[11:31:08.466] [INFO] JsonParseWorker: Processing 'end' type for file: C:/projects/cursor/testDataFromLiran\1\VC_2.0.26.6031_RASD_13-Mar-2025_14-15-07.txt
+estDataFromLiran\1\VC_2.0.26.6031_RASD_13-Mar-2025_14-15-07.txt has 13354 matches in 0.678829s
+[11:31:08.466] [INFO] JsonParseWorker: Processing completed - 13504 matches in 4 files
+[11:31:08.466] [INFO] JsonParseWorker: Total function time: 201 ms
+[11:31:08.466] [INFO] JsonParseWorker: Memory usage at parseJsonDataInternal - end: 88641536 bytes (84 MB)
+[11:31:08.466] [INFO] JsonParseWorker: Memory usage at After processEvents: 88649728 bytes (84 MB)
+[11:31:08.466] [INFO] JsonParseWorker: END - parseJsonDataInternal
+[11:31:08.466] [INFO] JsonParseWorker: Starting explicit QStringList cleanup
+[11:31:08.466] [INFO] JsonParseWorker: Memory usage at Before QStringList cleanup: 88649728 bytes (84 MB)
+[11:31:08.467] [INFO] CollapsibleSearchResults: onFileStatsUpdated - C:/projects/cursor/testDataFromLiran\1\VC_2.0.26.6031_RASD_13-Mar-2025_14-15-07.txt (0.678829s, 13354 lines)
+[11:31:08.467] [INFO] CollapsibleSearchResults: onParsingCompleted - SIGNAL RECEIVED! 13504 matches in 4 files
+[11:31:08.467] [INFO] CollapsibleSearchResults: Memory usage at Parsing completed - start: 85303296 bytes (81 MB)
+[11:31:08.467] [INFO] CollapsibleSearchResults: Progress completed - 100% (13504/13504 matches)
+[11:31:08.467] [INFO] CollapsibleSearchResults: Updated pane title to: Search Results - ✅ Found 13504 matches in 4 files
+[11:31:08.469] [INFO] JsonParseWorker: Memory usage at After QStringList cleanup: 76886016 bytes (73 MB)
+[11:31:08.469] [INFO] JsonParseWorker: QStringList cleanup completed
+[11:31:08.469] [INFO] JsonParseWorker: parseJsonData completed successfully
+[11:31:08.469] [INFO] JsonParseWorker: Total function time: 210 ms
+[11:31:08.469] [INFO] JsonParseWorker: Memory usage at parseJsonData - end: 76886016 bytes (73 MB)
+[11:31:08.469] [INFO] JsonParseWorker: END - parseJsonData
+[11:31:08.469] [INFO] CollapsibleSearchResults: onParsingCompleted - parsing finished
+[11:31:08.469] [INFO] CollapsibleSearchResults: Memory usage at Parsing completed - end: 68759552 bytes (65 MB)
+[11:31:08.469] [INFO] CollapsibleSearchResults: Emitting parsingCompleted signal to main window
+[11:31:08.469] [INFO] MainWindow: onParsingCompleted called - UI state handled centrally
+[11:31:08.469] [INFO] MainWindow: Setting final state to IDLE
+[11:31:08.469] [INFO] KSearch.cpp-updateSearchState: START
+[11:31:08.470] [INFO] KSearch-updateSearchState: Search state updated to: Ready (Lamp: #007bff)
+[11:31:08.481] [INFO] Background highlighting lamp deactivated
+[11:31:08.481] [INFO] KSearch.cpp-setSearchButton: START
+[11:31:08.481] [INFO] KSearch-setSearchButton: setSearchButton called with state=0
+[11:31:08.482] [INFO] KSearch-setSearchButton: Search button set to IDLE state
+[11:31:08.483] [INFO] KSearch-setSearchButton: Total function time: 1 ms
+[11:31:08.483] [INFO] KSearch.cpp-setSearchButton: END
+[11:31:08.483] [INFO] KSearch.cpp-setStopButton: START
+[11:31:08.483] [INFO] KSearch-setStopButton: setStopButton called with state=0
+[11:31:08.483] [INFO] KSearch-setStopButton: Stop button set to DISABLED state
+[11:31:08.484] [INFO] KSearch-setStopButton: Total function time: 1 ms
+[11:31:08.484] [INFO] KSearch.cpp-setStopButton: END
+[11:31:08.484] [INFO] KSearch-updateSearchState: Idle state - turned off all lamps
+[11:31:08.484] [INFO] KSearch.cpp-updateSearchState: END
+[11:31:08.484] [INFO] KSearch-updateSearchState: Function completed successfully
+[11:31:08.484] [INFO] CollapsibleSearchResults: Updated pane title to: Search Results - ✅ Found 13504 matches in 4 files | Search took 1.260 sec
+[11:31:08.484] [INFO] CollapsibleSearchResults: Updated pane title with search time: 1260 ms
+[11:31:08.484] [INFO] MainWindow: Total search time added to pane title: 1260 ms
+[11:31:08.484] [INFO] MainWindow: Status file updated
+[11:31:08.484] [INFO] MainWindow: Parsing completed - 13504 matches in 4 files
+[11:31:08.484] [INFO] CollapsibleSearchResults: parsingCompleted signal emitted
+[11:31:08.484] [INFO] MainWindow: Parsing progress update - 100% in 4 files
+[11:31:09.592] [INFO] KSearch.cpp-onCollapsibleResultSelected: START
+[11:31:09.592] [INFO] KSearch.cpp-updateSearchState: START
+[11:31:09.592] [INFO] KSearch-updateSearchState: Search state updated to: Ready (Lamp: #007bff)
+[11:31:09.594] [INFO] Background highlighting lamp deactivated
+[11:31:09.594] [INFO] KSearch.cpp-setSearchButton: START
+[11:31:09.595] [INFO] KSearch-setSearchButton: setSearchButton called with state=0
+[11:31:09.595] [INFO] KSearch-setSearchButton: Search button set to IDLE state
+[11:31:09.596] [INFO] KSearch-setSearchButton: Total function time: 1 ms
+[11:31:09.596] [INFO] KSearch.cpp-setSearchButton: END
+[11:31:09.596] [INFO] KSearch.cpp-setStopButton: START
+[11:31:09.597] [INFO] KSearch-setStopButton: setStopButton called with state=0
+[11:31:09.597] [INFO] KSearch-setStopButton: Stop button set to DISABLED state
+[11:31:09.598] [INFO] KSearch-setStopButton: Total function time: 1 ms
+[11:31:09.598] [INFO] KSearch.cpp-setStopButton: END
+[11:31:09.598] [INFO] KSearch-updateSearchState: Idle state - turned off all lamps
+[11:31:09.598] [INFO] KSearch.cpp-updateSearchState: END
+[11:31:09.598] [INFO] KSearch-updateSearchState: Function completed successfully
+[11:31:09.598] [INFO] onCollapsibleResultSelected: File: C:/projects/cursor/testDataFromLiran\2\ddsdws.txt, Line: 7
+[11:31:09.598] [INFO] KSearch.cpp-updateSearchState: START
+[11:31:09.598] [INFO] KSearch-updateSearchState: Search state updated to: Navigating files... (Lamp: #17a2b8)
+[11:31:09.600] [INFO] KSearch-updateSearchState: Set open file lamp to active (navigating)
+[11:31:09.600] [INFO] KSearch.cpp-updateSearchState: END
+[11:31:09.600] [INFO] KSearch-updateSearchState: Function completed successfully
+[11:31:09.600] [INFO] onCollapsibleResultSelected1: Non-cache mode - need to open file: C:/projects/cursor/testDataFromLiran\2\ddsdws.txt
+[11:31:09.600] [INFO] onCollapsibleResultSelected1: needToOpenFile : 1
+[11:31:09.600] [INFO] onCollapsibleResultSelected: Need to open file: C:/projects/cursor/testDataFromLiran\2\ddsdws.txt
+[11:31:09.600] [INFO] KSearch.cpp-KUpdateFileViewer2: START
+[11:31:09.600] [INFO] KSearch.cpp-updateSearchState: START
+[11:31:09.600] [INFO] KSearch-updateSearchState: Search state updated to: Navigating files... (Lamp: #17a2b8)
+[11:31:09.602] [INFO] KSearch-updateSearchState: Set open file lamp to active (navigating)
+[11:31:09.602] [INFO] KSearch.cpp-updateSearchState: END
+[11:31:09.602] [INFO] KSearch-updateSearchState: Function completed successfully
+[11:31:09.602] [INFO] KUpdateFileViewer2: File: C:/projects/cursor/testDataFromLiran\2\ddsdws.txt, Line: 7
+[11:31:09.602] [INFO] KUpdateFileViewer2: Cache setting: DISABLED
+[11:31:09.602] [INFO] KUpdateFileViewer2: Cache state check - cache size: 0, checking for file: C:/projects/cursor/testDataFromLiran\2\ddsdws.txt
+[11:31:09.602] [INFO] KUpdateFileViewer2: ✅ Cache is empty - no files in cache
+[11:31:09.602] [INFO] KUpdateFileViewer2: Non-cache mode - replacing files
+[11:31:09.602] [INFO] ScintillaEdit: User became active
+[11:31:09.609] [INFO] KSearch.cpp-kOpenFileTransfetToContentFast: START
+[11:31:09.609] [INFO] KSearch.cpp-updateSearchState: START
+[11:31:09.610] [INFO] KSearch-updateSearchState: Search state updated to: Navigating files... (Lamp: #17a2b8)
+[11:31:09.611] [INFO] KSearch-updateSearchState: Set open file lamp to active (navigating)
+[11:31:09.611] [INFO] KSearch.cpp-updateSearchState: END
+[11:31:09.611] [INFO] KSearch-updateSearchState: Function completed successfully
+[11:31:09.613] [INFO] kOpenFileTransfetToContentFast: Starting ultra-fast file open - C:/projects/cursor/testDataFromLiran\2\ddsdws.txt
+[11:31:09.613] [INFO] kOpenFileTransfetToContentFast: File size: 6879302 bytes
+[11:31:09.613] [INFO] kOpenFileTransfetToContentFast: File opened in 0ms
+[11:31:09.613] [INFO] kOpenFileTransfetToContentFast: Memory mapping succeeded in 0ms
+[11:31:09.614] [INFO] ScintillaEdit: Clearing extra highlights
+[11:31:09.614] [INFO] ScintillaEdit: Cleared tracked highlighted ranges
+[11:31:09.626] [INFO] kOpenFileTransfetToContentFast: Completed in 13ms
+[11:31:09.635] [INFO] KSearch.cpp-kOpenFileTransfetToContentFast: END
+[11:31:09.635] [INFO] KSearch.cpp-updateSearchState: START
+[11:31:09.635] [INFO] KSearch-updateSearchState: Search state updated to: Navigating files... (Lamp: #17a2b8)
+[11:31:09.637] [INFO] KSearch-updateSearchState: Set open file lamp to active (navigating)
+[11:31:09.637] [INFO] KSearch.cpp-updateSearchState: END
+[11:31:09.637] [INFO] KSearch-updateSearchState: Function completed successfully
+[11:31:09.637] [INFO] KUpdateFileViewer2: Calling highlightSearchResultLine with line number: 7
+[11:31:09.639] [INFO] KSearch.cpp-highlightSearchResultLine: START
+[11:31:09.639] [INFO] KSearch.cpp-updateSearchState: START
+[11:31:09.639] [INFO] KSearch-updateSearchState: Search state updated to: Navigating files... (Lamp: #17a2b8)
+[11:31:09.641] [INFO] KSearch-updateSearchState: Set open file lamp to active (navigating)
+[11:31:09.641] [INFO] KSearch.cpp-updateSearchState: END
+[11:31:09.641] [INFO] KSearch-updateSearchState: Function completed successfully
+[11:31:09.641] [INFO] highlightSearchResultLine: File: C:/projects/cursor/testDataFromLiran\2\ddsdws.txt, Line: 7
+[11:31:09.641] [INFO] highlightSearchResultLine: Highlighting search result line: 7 with color: #828282
+[11:31:09.648] [INFO] highlightSearchResultLine: Applying extra highlights for Highlight dialog rules
+[11:31:09.648] [INFO] KSearch.cpp-applyExtraHighlights: START
+[11:31:09.648] [INFO] KSearch-applyExtraHighlights: Starting extra highlights application
+[11:31:09.648] [INFO] ScintillaEdit: Highlighting extra rules - 1 rules
+[11:31:09.648] [INFO] ScintillaEdit: Case sensitive: No, Highlight sentence: Yes, Use viewport only: Yes
+[11:31:09.648] [INFO] ScintillaEdit: Viewport-only highlighting mode detected, calling highlightViewportOnly()
+[11:31:09.648] [INFO] ScintillaEdit: Starting viewport-only highlighting with 1 rules
+[11:31:09.648] [INFO] ScintillaEdit: Settings - Case sensitive: No, Highlight sentence: Yes, Use Scintilla search: No
+[11:31:09.648] [INFO] ScintillaEdit: Enabled rules changed or first time, clearing existing highlights
+[11:31:09.649] [INFO] ScintillaEdit: Enabled rules count changed from 0 to 1
+[11:31:09.649] [INFO] ScintillaEdit: Clearing extra highlights
+[11:31:09.649] [INFO] ScintillaEdit: Cleared tracked highlighted ranges
+[11:31:09.649] [INFO] ScintillaEdit: Visible viewport: lines 0-12 (12 lines)
+[11:31:09.649] [INFO] ScintillaEdit: Expanded range with buffer: lines 0-512 (513 lines)
+[11:31:09.649] [INFO] ScintillaEdit: Expanded range - lines 0 to 512 (positions 0 to 77301)
+[11:31:09.653] [INFO] ScintillaEdit: Expanded text length: 77301 characters
+[11:31:09.653] [INFO] ScintillaEdit: Viewport search pattern: '(RCB)'
+[11:31:09.654] [INFO] ScintillaEdit: Viewport highlighting completed in 4ms
+[11:31:09.654] [INFO] ScintillaEdit: Found and highlighted 5 matches in viewport
+[11:31:09.654] [INFO] ScintillaEdit: Added new highlighted range 0-512
+[11:31:09.654] [INFO] ScintillaEdit: Total highlighted ranges: 1
+[11:31:09.654] [INFO] KSearch-applyExtraHighlights: Called highlightExtra with viewport-only mode
+[11:31:09.654] [INFO] KSearch-applyExtraHighlights: Highlighting completed in 5ms
+[11:31:09.654] [INFO] KSearch-applyExtraHighlights: File fully highlighted: NO
+[11:31:09.654] [INFO] KSearch-applyExtraHighlights: Background highlighting setting read: DISABLED
+[11:31:09.654] [INFO] KSearch-applyExtraHighlights: Background highlighting will NOT START
+[11:31:09.654] [INFO] KSearch-applyExtraHighlights: Total function time: 6 ms
+[11:31:09.654] [INFO] KSearch.cpp-applyExtraHighlights: END
+[11:31:09.655] [INFO] highlightSearchResultLine: Completed - search result line highlighted with search params color
+[11:31:09.655] [INFO] KSearch.cpp-highlightSearchResultLine: END
+[11:31:09.655] [INFO] KSearch.cpp-updateSearchState: START
+[11:31:09.655] [INFO] KSearch-updateSearchState: Search state updated to: Navigating files... (Lamp: #17a2b8)
+[11:31:09.664] [INFO] KSearch-updateSearchState: Set open file lamp to active (navigating)
+[11:31:09.664] [INFO] KSearch.cpp-updateSearchState: END
+[11:31:09.664] [INFO] KSearch-updateSearchState: Function completed successfully
+[11:31:09.765] [INFO] KUpdateFileViewer2: highlightSearchResultLine completed
+[11:31:09.766] [INFO] KSearch.cpp-KUpdateFileViewer2: END
+[11:31:09.766] [INFO] KSearch.cpp-updateSearchState: START
+[11:31:09.766] [INFO] KSearch-updateSearchState: Search state updated to: Navigating files... (Lamp: #17a2b8)
+[11:31:09.767] [INFO] KSearch-updateSearchState: Set open file lamp to active (navigating)
+[11:31:09.767] [INFO] KSearch.cpp-updateSearchState: END
+[11:31:09.767] [INFO] KSearch-updateSearchState: Function completed successfully
+[11:31:09.767] [INFO] KSearch.cpp-updateSearchState: START
+[11:31:09.768] [INFO] KSearch-updateSearchState: Search state updated to: Ready (Lamp: #007bff)
+[11:31:09.769] [INFO] Background highlighting lamp deactivated
+[11:31:09.769] [INFO] KSearch.cpp-setSearchButton: START
+[11:31:09.769] [INFO] KSearch-setSearchButton: setSearchButton called with state=0
+[11:31:09.769] [INFO] KSearch-setSearchButton: Search button set to IDLE state
+[11:31:09.770] [INFO] KSearch-setSearchButton: Total function time: 1 ms
+[11:31:09.770] [INFO] KSearch.cpp-setSearchButton: END
+[11:31:09.771] [INFO] KSearch.cpp-setStopButton: START
+[11:31:09.771] [INFO] KSearch-setStopButton: setStopButton called with state=0
+[11:31:09.771] [INFO] KSearch-setStopButton: Stop button set to DISABLED state
+[11:31:09.776] [INFO] KSearch-setStopButton: Total function time: 5 ms
+[11:31:09.776] [INFO] KSearch.cpp-setStopButton: END
+[11:31:09.776] [INFO] KSearch-updateSearchState: Idle state - turned off all lamps
+[11:31:09.776] [INFO] KSearch.cpp-updateSearchState: END
+[11:31:09.776] [INFO] KSearch-updateSearchState: Function completed successfully
+[11:31:09.776] [DEBUG] onCollapsibleResultSelected: completed
+[11:31:09.776] [INFO] KSearch.cpp-onCollapsibleResultSelected: END
+[11:31:09.776] [INFO] KSearch.cpp-updateSearchState: START
+[11:31:09.777] [INFO] KSearch-updateSearchState: Search state updated to: Ready (Lamp: #007bff)
+[11:31:09.778] [INFO] Background highlighting lamp deactivated
+[11:31:09.778] [INFO] KSearch.cpp-setSearchButton: START
+[11:31:09.779] [INFO] KSearch-setSearchButton: setSearchButton called with state=0
+[11:31:09.779] [INFO] KSearch-setSearchButton: Search button set to IDLE state
+[11:31:09.780] [INFO] KSearch-setSearchButton: Total function time: 1 ms
+[11:31:09.780] [INFO] KSearch.cpp-setSearchButton: END
+[11:31:09.780] [INFO] KSearch.cpp-setStopButton: START
+[11:31:09.780] [INFO] KSearch-setStopButton: setStopButton called with state=0
+[11:31:09.781] [INFO] KSearch-setStopButton: Stop button set to DISABLED state
+[11:31:09.782] [INFO] KSearch-setStopButton: Total function time: 1 ms
+[11:31:09.782] [INFO] KSearch.cpp-setStopButton: END
+[11:31:09.782] [INFO] KSearch-updateSearchState: Idle state - turned off all lamps
+[11:31:09.782] [INFO] KSearch.cpp-updateSearchState: END
+[11:31:09.782] [INFO] KSearch-updateSearchState: Function completed successfully
+[11:31:10.666] [INFO] ScintillaEdit: User became idle, starting continuous background highlighting

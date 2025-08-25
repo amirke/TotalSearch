@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/projects/cursor/TotalSearch/build/cmake_install.cmake",
+		"C:/projects/cursor/TotalSearch/build/scintilla/scintilla/src/cmake_install.cmake",
+		"C:/projects/cursor/TotalSearch/build/scintilla/scintilla/qt/ScintillaEditBase/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

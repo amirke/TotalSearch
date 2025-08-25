@@ -1,0 +1,10 @@
+^C:\PROJECTS\CURSOR\TOTALSEARCH\BUILD\CMAKEFILES\2C02FC1A4D553D1269E81E7B0B67D7BD\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/projects/cursor/TotalSearch -BC:/projects/cursor/TotalSearch/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/projects/cursor/TotalSearch/build/TotalSearch.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

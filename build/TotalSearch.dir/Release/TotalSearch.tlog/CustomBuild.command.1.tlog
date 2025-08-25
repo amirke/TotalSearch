@@ -1,0 +1,36 @@
+^C:\PROJECTS\CURSOR\TOTALSEARCH\BUILD\CMAKEFILES\D705D0A016AD08ABCC0336168922C797\AUTOUIC_(CONFIG).STAMP.RULE
+setlocal
+cd C:\projects\cursor\TotalSearch\build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROJECTS\CURSOR\TOTALSEARCH\BUILD\CMAKEFILES\E26BC9E49150A362069EEA4CEC47C264\QRC_ICONS.CPP.RULE
+setlocal
+cd C:\projects\cursor\TotalSearch\build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc C:/projects/cursor/TotalSearch/build/CMakeFiles/TotalSearch_autogen.dir/AutoRcc_icons_2SEMU33LXP_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROJECTS\CURSOR\TOTALSEARCH\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/projects/cursor/TotalSearch -BC:/projects/cursor/TotalSearch/build --check-stamp-file C:/projects/cursor/TotalSearch/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

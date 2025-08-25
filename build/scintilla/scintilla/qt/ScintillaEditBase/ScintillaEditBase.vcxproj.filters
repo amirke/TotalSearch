@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\build\scintilla\scintilla\qt\ScintillaEditBase\ScintillaEditBase_autogen\mocs_compilation_Debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\scintilla\scintilla\qt\ScintillaEditBase\ScintillaEditBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\scintilla\scintilla\qt\ScintillaEditBase\ScintillaQt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\scintilla\scintilla\qt\ScintillaEditBase\PlatQt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\build\scintilla\scintilla\qt\ScintillaEditBase\ScintillaEditBase_autogen\mocs_compilation_Release.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\build\scintilla\scintilla\qt\ScintillaEditBase\ScintillaEditBase_autogen\mocs_compilation_MinSizeRel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\build\scintilla\scintilla\qt\ScintillaEditBase\ScintillaEditBase_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\scintilla\scintilla\qt\ScintillaEditBase\ScintillaEditBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\scintilla\scintilla\qt\ScintillaEditBase\ScintillaQt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\scintilla\scintilla\qt\ScintillaEditBase\PlatQt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\projects\cursor\TotalSearch\scintilla\scintilla\qt\ScintillaEditBase\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{6BAE07B1-5C59-381B-86F8-4A8F3A5A33EE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{268F6C8C-E9E6-3D93-B1B2-A27EB1645855}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

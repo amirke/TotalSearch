@@ -1,0 +1,6 @@
+C:/projects/cursor/TotalSearch/build/CMakeFiles/TotalSearch.dir
+C:/projects/cursor/TotalSearch/build/CMakeFiles/TotalSearchWatchdog.dir
+C:/projects/cursor/TotalSearch/build/CMakeFiles/ALL_BUILD.dir
+C:/projects/cursor/TotalSearch/build/CMakeFiles/ZERO_CHECK.dir
+C:/projects/cursor/TotalSearch/build/scintilla/scintilla/src/CMakeFiles/Scintilla.dir
+C:/projects/cursor/TotalSearch/build/scintilla/scintilla/qt/ScintillaEditBase/CMakeFiles/ScintillaEditBase.dir

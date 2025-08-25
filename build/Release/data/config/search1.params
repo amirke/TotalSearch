@@ -1,0 +1,9 @@
+[SearchParameters]
+FixedString=false
+AddPattern=
+CaseSensitive=false
+IgnoreCase=false
+SmartCase=true
+InclExclude=
+KeepFilesInCache=false
+HighlightColor=@Variant(\0\0\0\x43\x1\xff\xff\x82\x82\x82\x82\x82\x82\0\0)

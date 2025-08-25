@@ -11,9 +11,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Smooth scrolling for navigation links (only for internal page links)
+// Smooth scrolling for navigation links
 document.addEventListener('DOMContentLoaded', function() {
-    const navLinks = document.querySelectorAll('nav a[href^="#"]');
+    const navLinks = document.querySelectorAll('a[href^="#"]');
     
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
@@ -82,6 +82,29 @@ document.querySelectorAll('.pricing-card').forEach(card => {
 
 // Download Button Click Handlers - Removed to allow direct download
 // The download links in HTML will work directly without JavaScript interference
+
+// Q&A Accordion Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const qaItems = document.querySelectorAll('.qa-item');
+    
+    qaItems.forEach(item => {
+        const question = item.querySelector('.qa-question');
+        
+        question.addEventListener('click', function() {
+            const isActive = item.classList.contains('active');
+            
+            // Close all other items
+            qaItems.forEach(otherItem => {
+                otherItem.classList.remove('active');
+            });
+            
+            // Toggle current item
+            if (!isActive) {
+                item.classList.add('active');
+            }
+        });
+    });
+});
 
 // Feature Tag Animation
 document.querySelectorAll('.feature-tag').forEach(tag => {

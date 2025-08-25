@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\build\TotalSearchWatchdog_autogen\mocs_compilation_Debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\watchdog\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\watchdog\TotalSearchWatchdog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\build\TotalSearchWatchdog_autogen\mocs_compilation_Release.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\build\TotalSearchWatchdog_autogen\mocs_compilation_MinSizeRel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\build\TotalSearchWatchdog_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\watchdog\TotalSearchWatchdog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\build\TotalSearchWatchdog_autogen\include_Debug\src\ui_mainwindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\build\TotalSearchWatchdog_autogen\include_Debug\src\ui_searchwidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\build\TotalSearchWatchdog_autogen\include_Debug\src\ui_fileviewer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\build\TotalSearchWatchdog_autogen\include_Debug\src\ui_logviewer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\build\TotalSearchWatchdog_autogen\include_Debug\src\ui_searchresults.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\build\TotalSearchWatchdog_autogen\include_Release\src\ui_mainwindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\build\TotalSearchWatchdog_autogen\include_Release\src\ui_searchwidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\build\TotalSearchWatchdog_autogen\include_Release\src\ui_fileviewer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\build\TotalSearchWatchdog_autogen\include_Release\src\ui_logviewer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\build\TotalSearchWatchdog_autogen\include_Release\src\ui_searchresults.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\build\TotalSearchWatchdog_autogen\include_MinSizeRel\src\ui_mainwindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\build\TotalSearchWatchdog_autogen\include_MinSizeRel\src\ui_searchwidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\build\TotalSearchWatchdog_autogen\include_MinSizeRel\src\ui_fileviewer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\build\TotalSearchWatchdog_autogen\include_MinSizeRel\src\ui_logviewer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\build\TotalSearchWatchdog_autogen\include_MinSizeRel\src\ui_searchresults.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\build\TotalSearchWatchdog_autogen\include_RelWithDebInfo\src\ui_mainwindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\build\TotalSearchWatchdog_autogen\include_RelWithDebInfo\src\ui_searchwidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\build\TotalSearchWatchdog_autogen\include_RelWithDebInfo\src\ui_fileviewer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\build\TotalSearchWatchdog_autogen\include_RelWithDebInfo\src\ui_logviewer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\build\TotalSearchWatchdog_autogen\include_RelWithDebInfo\src\ui_searchresults.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\projects\cursor\TotalSearch\build\CMakeFiles\6d79ce4e816728a0613dae46a2815d44\autouic_(CONFIG).stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\projects\cursor\TotalSearch\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\projects\cursor\TotalSearch\build\TotalSearchWatchdog_autogen\autouic_Debug.stamp" />
+    <None Include="C:\projects\cursor\TotalSearch\build\TotalSearchWatchdog_autogen\autouic_Release.stamp" />
+    <None Include="C:\projects\cursor\TotalSearch\build\TotalSearchWatchdog_autogen\autouic_MinSizeRel.stamp" />
+    <None Include="C:\projects\cursor\TotalSearch\build\TotalSearchWatchdog_autogen\autouic_RelWithDebInfo.stamp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{3BD833CA-C738-3A2E-AE96-E2424A2F1FBA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{6BAE07B1-5C59-381B-86F8-4A8F3A5A33EE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{268F6C8C-E9E6-3D93-B1B2-A27EB1645855}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

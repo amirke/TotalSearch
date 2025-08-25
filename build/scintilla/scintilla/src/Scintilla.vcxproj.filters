@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\build\scintilla\scintilla\src\Scintilla_autogen\mocs_compilation_Debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\scintilla\scintilla\src\AutoComplete.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\scintilla\scintilla\src\CallTip.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\scintilla\scintilla\src\CaseConvert.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\scintilla\scintilla\src\CaseFolder.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\scintilla\scintilla\src\CellBuffer.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\scintilla\scintilla\src\ChangeHistory.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\scintilla\scintilla\src\CharacterCategoryMap.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\scintilla\scintilla\src\CharacterType.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\scintilla\scintilla\src\CharClassify.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\scintilla\scintilla\src\ContractionState.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\scintilla\scintilla\src\DBCS.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\scintilla\scintilla\src\Decoration.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\scintilla\scintilla\src\Document.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\scintilla\scintilla\src\EditModel.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\scintilla\scintilla\src\Editor.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\scintilla\scintilla\src\EditView.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\scintilla\scintilla\src\Geometry.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\scintilla\scintilla\src\Indicator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\scintilla\scintilla\src\KeyMap.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\scintilla\scintilla\src\LineMarker.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\scintilla\scintilla\src\MarginView.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\scintilla\scintilla\src\PerLine.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\scintilla\scintilla\src\PositionCache.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\scintilla\scintilla\src\RESearch.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\scintilla\scintilla\src\RunStyles.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\scintilla\scintilla\src\ScintillaBase.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\scintilla\scintilla\src\Selection.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\scintilla\scintilla\src\Style.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\scintilla\scintilla\src\UniConversion.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\scintilla\scintilla\src\UniqueString.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\scintilla\scintilla\src\ViewStyle.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\scintilla\scintilla\src\XPM.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\build\scintilla\scintilla\src\Scintilla_autogen\mocs_compilation_Release.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\build\scintilla\scintilla\src\Scintilla_autogen\mocs_compilation_MinSizeRel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\build\scintilla\scintilla\src\Scintilla_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\projects\cursor\TotalSearch\scintilla\scintilla\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{268F6C8C-E9E6-3D93-B1B2-A27EB1645855}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

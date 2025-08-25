@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\build\TotalSearch_autogen\mocs_compilation_Debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\src\mainwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\src\scintillaedit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\src\preferencesdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\src\logger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\src\filelinemodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\src\utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\src\filesearcher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\src\searchresults.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\src\logviewer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\src\fileviewer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\src\highlighter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\src\filewatcher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\src\searchwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\src\LogDataWorker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\src\LogMainView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\src\searchdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\src\KSearchBun.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\src\rgsearchdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\src\clocktestdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\src\CollapsibleSearchResults.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\src\highlightdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\src\engineeringdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\src\configurationdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\src\JsonParseWorker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\src\KSearch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\src\DetachablePane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\build\TotalSearch_autogen\2SEMU33LXP_Debug\qrc_icons.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\build\TotalSearch_autogen\mocs_compilation_Release.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\build\TotalSearch_autogen\2SEMU33LXP_Release\qrc_icons.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\build\TotalSearch_autogen\mocs_compilation_MinSizeRel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\build\TotalSearch_autogen\2SEMU33LXP_MinSizeRel\qrc_icons.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\build\TotalSearch_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\projects\cursor\TotalSearch\build\TotalSearch_autogen\2SEMU33LXP_RelWithDebInfo\qrc_icons.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\src\mainwindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\src\scintillaedit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\src\preferencesdialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\src\logger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\src\filelinemodel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\src\utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\src\filesearcher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\src\searchresults.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\src\logviewer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\src\fileviewer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\src\highlighter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\src\filewatcher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\src\searchwidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\src\LogDataWorker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\src\LogMainView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\src\searchdialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\src\KSearchBun.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\src\rgsearchdialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\src\clocktestdialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\src\CollapsibleSearchResults.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\src\highlightdialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\src\engineeringdialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\src\configurationdialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\src\JsonParseWorker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\src\KSearch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\src\DetachablePane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\build\TotalSearch_autogen\include_Debug\src\ui_mainwindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\build\TotalSearch_autogen\include_Debug\src\ui_searchwidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\build\TotalSearch_autogen\include_Debug\src\ui_fileviewer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\build\TotalSearch_autogen\include_Debug\src\ui_logviewer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\build\TotalSearch_autogen\include_Debug\src\ui_searchresults.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\build\TotalSearch_autogen\include_Release\src\ui_mainwindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\build\TotalSearch_autogen\include_Release\src\ui_searchwidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\build\TotalSearch_autogen\include_Release\src\ui_fileviewer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\build\TotalSearch_autogen\include_Release\src\ui_logviewer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\build\TotalSearch_autogen\include_Release\src\ui_searchresults.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\build\TotalSearch_autogen\include_MinSizeRel\src\ui_mainwindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\build\TotalSearch_autogen\include_MinSizeRel\src\ui_searchwidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\build\TotalSearch_autogen\include_MinSizeRel\src\ui_fileviewer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\build\TotalSearch_autogen\include_MinSizeRel\src\ui_logviewer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\build\TotalSearch_autogen\include_MinSizeRel\src\ui_searchresults.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\build\TotalSearch_autogen\include_RelWithDebInfo\src\ui_mainwindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\build\TotalSearch_autogen\include_RelWithDebInfo\src\ui_searchwidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\build\TotalSearch_autogen\include_RelWithDebInfo\src\ui_fileviewer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\build\TotalSearch_autogen\include_RelWithDebInfo\src\ui_logviewer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\projects\cursor\TotalSearch\build\TotalSearch_autogen\include_RelWithDebInfo\src\ui_searchresults.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\projects\cursor\TotalSearch\build\CMakeFiles\d705d0a016ad08abcc0336168922c797\autouic_(CONFIG).stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\projects\cursor\TotalSearch\build\CMakeFiles\e26bc9e49150a362069eea4cec47c264\qrc_icons.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\projects\cursor\TotalSearch\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\projects\cursor\TotalSearch\src\mainwindow.ui" />
+    <None Include="C:\projects\cursor\TotalSearch\src\searchwidget.ui" />
+    <None Include="C:\projects\cursor\TotalSearch\src\fileviewer.ui" />
+    <None Include="C:\projects\cursor\TotalSearch\src\logviewer.ui" />
+    <None Include="C:\projects\cursor\TotalSearch\src\searchresults.ui" />
+    <None Include="C:\projects\cursor\TotalSearch\icons\icons.qrc" />
+    <None Include="C:\projects\cursor\TotalSearch\build\TotalSearch_autogen\autouic_Debug.stamp" />
+    <None Include="C:\projects\cursor\TotalSearch\build\TotalSearch_autogen\autouic_Release.stamp" />
+    <None Include="C:\projects\cursor\TotalSearch\build\TotalSearch_autogen\autouic_MinSizeRel.stamp" />
+    <None Include="C:\projects\cursor\TotalSearch\build\TotalSearch_autogen\autouic_RelWithDebInfo.stamp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{3BD833CA-C738-3A2E-AE96-E2424A2F1FBA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{6BAE07B1-5C59-381B-86F8-4A8F3A5A33EE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{268F6C8C-E9E6-3D93-B1B2-A27EB1645855}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
