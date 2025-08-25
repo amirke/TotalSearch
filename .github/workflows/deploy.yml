@@ -3,8 +3,11 @@ name: Deploy Website to GitHub Pages
 on:
   push:
     branches: [ main, master ]
-  pull_request:
-    branches: [ main, master ]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
   deploy:
@@ -14,10 +17,14 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
       
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
+    - name: Setup Pages
+      uses: actions/configure-pages@v4
+      
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./website
-        publish_branch: gh-pages
+        path: './website'
+        
+    - name: Deploy to GitHub Pages
+      uses: actions/deploy-pages@v4
 
