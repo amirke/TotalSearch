@@ -11,9 +11,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Smooth scrolling for navigation links
+// Smooth scrolling for navigation links (only for internal page links)
 document.addEventListener('DOMContentLoaded', function() {
-    const navLinks = document.querySelectorAll('a[href^="#"]');
+    const navLinks = document.querySelectorAll('nav a[href^="#"]');
     
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
@@ -80,17 +80,8 @@ document.querySelectorAll('.pricing-card').forEach(card => {
     });
 });
 
-// Download Button Click Handlers
-document.querySelectorAll('.btn-download').forEach(button => {
-    button.addEventListener('click', function(e) {
-        // Allow the download to proceed normally
-        const platform = this.textContent.includes('Windows') ? 'Windows' : 
-                        this.textContent.includes('macOS') ? 'macOS' : 'Linux';
-        
-        // Track download attempt (replace with actual analytics)
-        console.log(`Download started for ${platform}`);
-    });
-});
+// Download Button Click Handlers - Removed to allow direct download
+// The download links in HTML will work directly without JavaScript interference
 
 // Feature Tag Animation
 document.querySelectorAll('.feature-tag').forEach(tag => {
