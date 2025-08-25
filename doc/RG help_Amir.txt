@@ -1,0 +1,270 @@
+rg [OPTIONS] PATTERN [PATH ...]
+
+INPUT OPTIONS:
+  -e, --regexp=PATTERN            A pattern to search for.
+SEARCH OPTIONS:
+  -s, --case-sensitive            Search case sensitively (default).
+  --crlf                          Use CRLF line terminators (nice for Windows).
+  -E, --encoding=ENCODING         Specify the text encoding of files to search.
+  -F, --fixed-strings             Treat all patterns as literals.
+  -i, --ignore-case               Case insensitive search.
+  -v, --invert-match              Invert matching.
+  --mmap                          Search with memory maps when possible.
+  --no-unicode                    Disable Unicode mode.
+  -S, --smart-case                Smart case search.
+  -a, --text                      Search binary files as if they were text.
+  -j, --threads=NUM               Set the approximate number of threads to use.
+
+FILTER OPTIONS:
+  -g, --glob=GLOB                 Include or exclude file paths.
+  -., --hidden                    Search hidden files and directories.
+  --no-ignore                     Don't use ignore files.
+  -T, --type-not=TYPE             Do not search files matching TYPE.
+
+OUTPUT OPTIONS:
+  --heading                       Print matches grouped by each file.
+  -n, --line-number               Show line numbers.
+  -o, --only-matching             Print only matched parts of a line.
+  -r, --replace=TEXT              Replace matches with the given text.
+  -H, --with-filename             Print the file path with each matching line.
+  -I, --no-filename               Never print the path with each matching line.
+
+OUTPUT MODES:
+  -c, --count                     Show count of matching lines for each file.
+  --count-matches                 Show count of every match for each file.
+  --json                          Show search results in a JSON Lines format.
+
+LOGGING OPTIONS:
+  --no-ignore-messages            Suppress gitignore parse error messages.
+  --no-messages                   Suppress some error messages.
+  --stats                         Print statistics about the search.
+
+======================================================================================
+======================================================================================
+======================================================================================
+======================================================================================
+
+
+1. -e, --regexp=PATTERN
+Search for the specified regular expression pattern. Can be used multiple times.
+
+Example 1: rg -e "error" log.txt → Finds lines with "error" in log.txt.
+
+Example 2: rg -e "warn" -e "fail" logs/ → Finds lines with either "warn" or "fail".
+
+Example 3: rg -e "-start" → Searches for literal -start (useful when the pattern starts with -)
+.
+
+2. -s, --case-sensitive
+Force case-sensitive search (default).
+
+Example 1: rg -s "Error" → Matches only Error, not error.
+
+Example 2: rg -s "TODO" src/` → Matches only uppercase TODO.
+
+Example 3: rg -s "main" main.c→ Matches lowercasemain` only
+.
+
+3. --crlf
+Treat CRLF (\r\n) as line terminators instead of LF.
+
+Example 1: rg --crlf "^TODO" winlog.txt→ Correctly anchors lines starting withTODO` on Windows files.
+
+Example 2: rg --crlf "$" code/` → Matches end of line for CRLF-terminated lines.
+
+Example 3: `rg --crlf "(?R:$)"`` → Match right before CR or LF characters
+.
+
+4. -E, --encoding=ENCODING
+Specify file text encoding.
+
+Example 1: rg -E utf-16 "hello" data.txt` → Search UTF-16 encoded file.
+
+Example 2: rg -E utf-8 "pattern" folder/` → Search in UTF-8 explicitly.
+
+Example 3: `rg -E none "rawdata"`` → Search raw bytes, ignoring BOM or encoding detection
+.
+
+5. -F, --fixed-strings
+Treat patterns as literal text, not regex.
+
+Example 1: rg -F "(a|b)" test.txt→ Matches(a|b)` literally, not as regex.
+
+Example 2: rg -F ".*error.*" log.txt→ Matches the exact string.error.`.
+
+Example 3: rg -F "C++" source.cpp→ Matches literalC++without escaping+`
+.
+
+6. -i, --ignore-case
+Case-insensitive search.
+
+Example 1: rg -i "Error" logs/→ Matcheserror, Error, ERROR`.
+
+Example 2: rg -i "TODO" src/→ Matchestodo, ToDo`, etc.
+
+Example 3: rg -i "main" main.c→ Matchesmain, Main`, etc.
+.
+
+7. -v, --invert-match
+Show lines not matching the pattern.
+
+Example 1: rg -v "DEBUG" log.txt→ Show lines withoutDEBUG`.
+
+Example 2: rg -v "skipme" data.csv→ Print all lines except those withskipme`.
+
+Example 3: rg -v "foo" src/→ Exclude lines containingfoo`
+.
+
+8. --mmap
+Use memory-mapped I/O for searching.
+
+Example 1: rg --mmap "error" largefile.log` → Faster search in large file.
+
+Example 2: rg --mmap "TODO" project/` → Use mmap for multiple files.
+
+Example 3: rg --mmap -i "config" config/` → Combine with ignore-case
+.
+
+9. --no-unicode
+Disable Unicode matching rules.
+
+Example 1: `rg --no-unicode "\w+"`` → Matches only ASCII word characters.
+
+Example 2: rg --no-unicode "café" file.txt→é` must match byte-for-byte.
+
+Example 3: rg --no-unicode -i "ß"`` → Matches ßonly, notSS`
+.
+
+10. -S, --smart-case
+Case-insensitive if pattern is all lowercase, otherwise case-sensitive.
+
+Example 1: rg -S "todo" src/→ Matchestodo, TODO`, etc.
+
+Example 2: rg -S "TODO" src/` → Case-sensitive, matches only uppercase TODO.
+
+Example 3: rg -S "mainFunc" src/` → Matches exact case since pattern has uppercase letters
+.
+
+11. -a, --text
+Search binary files as text.
+
+Example 1: rg -a "password" binaries/` → Matches "password" inside binary files.
+
+Example 2: rg -a "PDF" data.pdf` → Prints matches even if PDF has binary parts.
+
+Example 3: rg -a "nullbyte" file.bin` → Ignores NUL bytes stopping search
+.
+
+12. -j, --threads=NUM
+Set the number of search threads.
+
+Example 1: rg -j 8 "error" logs/` → Uses 8 threads.
+
+Example 2: rg -j 1 "TODO" src/` → Single-threaded search (deterministic order).
+
+Example 3: `rg -j 0 "fixme"`` → Auto-selects thread count based on CPU cores
+.
+
+
+FILTER OPTIONS
+13. -g, --glob=GLOB
+Include or exclude files by glob pattern.
+
+Example 1: rg -g "*.cpp" src/→ Search only in.cpp` files.
+
+Example 2: rg -g "!test/*" project/→ Exclude all files intest` folder.
+
+Example 3: rg -g "*.{c,h}" "main" → Search only .c and .h files
+.
+
+14. -., --hidden
+Include hidden files and directories (those starting with .).
+
+Example 1: rg -. "TODO" → Search including hidden .gitignore files.
+
+Example 2: rg --hidden "config" dotfiles/` → Search dotfiles directory.
+
+Example 3: rg -. "password" home/→ Matches in.env` files
+.
+
+16. --no-ignore
+Disable all ignore files.
+
+Example 1: rg --no-ignore "password" project/→ Search in files excluded by.gitignore`.
+
+Example 2: rg --no-ignore -g "*.log" → Search logs even if .ignore excludes them.
+
+Example 3: rg --no-ignore "TODO" /` → Global search without ignoring anything
+.
+
+24. -T, --type-not=TYPE
+Exclude a file type from search.
+
+Example 1: rg -T js "TODO" → Search all but JavaScript files.
+
+Example 2: rg -T html -T css "main" → Exclude both HTML and CSS.
+
+Example 3: rg -T md "fixme" → Exclude markdown files
+.
+
+OUTPUT MODES
+33. -c, --count
+Show count of matching lines.
+
+Example 1: rg -c "TODO" src/` → Count TODOs per file.
+
+Example 2: rg -c "error" logs/` → Number of error lines in logs.
+
+Example 3: rg -c -i "warning" config/
+.
+
+34. --count-matches
+Show total number of matches.
+
+Example 1: rg --count-matches "TODO" → Count every match (not just lines).
+
+Example 2: rg --count-matches "error" → Each occurrence counted.
+
+Example 3: rg --count-matches "fail" project/
+.
+
+35. --json
+Output matches in JSON format.
+
+Example 1: rg --json "TODO" → Each match as JSON line.
+
+Example 2: rg --json -i "error" logs/` → Machine-readable format.
+
+Example 3: rg --json "fixme" project/
+.
+
+LOGGING OPTIONS
+36. --no-ignore-messages
+Suppress gitignore parse errors.
+
+Example 1: rg --no-ignore-messages "TODO" → Hide parse error messages.
+
+Example 2: rg --no-ignore-messages "error" → Cleaner logs.
+
+Example 3: rg --no-ignore-messages "*.log"
+.
+
+37. --no-messages
+Suppress error messages (like unreadable files).
+
+Example 1: rg --no-messages "TODO" → Ignore permission errors.
+
+Example 2: rg --no-messages "error" logs/` → Cleaner output for scripts.
+
+Example 3: rg --no-messages "main" src/
+.
+
+38. --stats
+Show search statistics (number of matches, files, etc.).
+
+Example 1: rg --stats "TODO" src/` → Show stats after search.
+
+Example 2: rg --stats -i "error" logs/` → Count matches and files searched.
+
+Example 3: rg --stats "fixme" project/
+.

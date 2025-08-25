@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TotalSearch - Professional File Search & Text Analysis Tool</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-search-plus"></i>
+                <span>TotalSearch</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#download">Download</a></li>
+                <li><a href="#support">Support</a></li>
+                <li><a href="#contact" class="cta-button">Get Started</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Find Anything, Anywhere, Instantly</h1>
+                <p class="hero-subtitle">Professional-grade file search and text analysis tool that makes finding information across massive codebases and documents effortless.</p>
+                <div class="hero-features">
+                    <div class="feature-tag">
+                        <i class="fas fa-bolt"></i>
+                        Lightning Fast
+                    </div>
+                    <div class="feature-tag">
+                        <i class="fas fa-shield-alt"></i>
+                        Enterprise Ready
+                    </div>
+                    <div class="feature-tag">
+                        <i class="fas fa-code"></i>
+                        Developer Friendly
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#download" class="btn-primary">Download Free Trial</a>
+                    <a href="#demo" class="btn-secondary">Watch Demo</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- Single App Mockup -->
+                <div class="app-mockup active" id="side-by-side">
+                    <div class="mockup-header">
+                        <div class="mockup-title">TotalSearch - Advanced File Search and Viewer</div>
+                        <div class="mockup-buttons">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="mockup-content">
+                        <!-- Search Controls Panel -->
+                        <div class="search-controls-panel">
+                            <div class="search-inputs">
+                                <div class="input-group">
+                                    <label>Pattern:</label>
+                                    <input type="text" value="R" placeholder="Enter search pattern..." />
+                                </div>
+                                <div class="input-group">
+                                    <label>Path:</label>
+                                    <input type="text" value="C:/projects/cursor/TotalSearch/testDataFromLiran" placeholder="Select search path..." />
+                                    <button class="browse-btn">Browse</button>
+                                </div>
+                            </div>
+                            <div class="search-buttons">
+                                <div class="button-group left">
+                                    <button class="search-btn primary">Search</button>
+                                    <button class="search-btn secondary">Stop</button>
+                                </div>
+                                <div class="button-group right">
+                                    <button class="search-btn secondary">Search Params</button>
+                                    <button class="search-btn secondary">Highlight</button>
+                                    <button class="search-btn secondary">Engineering</button>
+                                    <button class="search-btn secondary">Config</button>
+                                </div>
+                            </div>
+                            <!-- Progress Bar -->
+                            <div class="progress-container">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 75%"></div>
+                                </div>
+                                <div class="progress-text">Parsing 75% - 1,777,467 matches in 4 files</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Main Content Area -->
+                        <div class="main-content">
+                            <div class="pane-config-indicator">
+                                <span class="config-label">Layout:</span>
+                                <span class="config-value">Side by Side</span>
+                            </div>
+                            <!-- Search Results Panel -->
+                            <div class="results-panel">
+                                <div class="panel-header">
+                                    <h3>Search Results - ✅ Found 1,777,467 matches in 4 files</h3>
+                                </div>
+                                <div class="results-tree">
+                                    <div class="file-group expanded">
+                                        <div class="file-header">
+                                            <i class="fas fa-folder-open"></i>
+                                            <span>C:/projects/cursor/TotalSearch/testDataFromLiran/1/</span>
+                                            <span class="match-count">(1,068,918 matches)</span>
+                                        </div>
+                                        <div class="file-items">
+                                            <div class="file-item">
+                                                <i class="fas fa-file-alt"></i>
+                                                <span>VC_2.0.26.6031_RASD_13-Mar-2025_14-10-36.txt</span>
+                                                <span class="match-count">(949,584 matches)</span>
+                                            </div>
+                                            <div class="file-item">
+                                                <i class="fas fa-file-alt"></i>
+                                                <span>VC_2.0.26.6031_RASD_13-Mar-2025_14-15-07.txt</span>
+                                                <span class="match-count">(119,334 matches)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- File Viewer Panel -->
+                            <div class="file-viewer-panel">
+                                <div class="panel-header">
+                                    <h3>File Viewer</h3>
+                                </div>
+                                <div class="file-content">
+                                    <div class="line-numbers">
+                                        <span>1</span>
+                                        <span>2</span>
+                                        <span>3</span>
+                                        <span>4</span>
+                                        <span>5</span>
+                                    </div>
+                                    <div class="code-content">
+                                        <div class="code-line"><span class="highlight">R</span>andom data line 1 with search term</div>
+                                        <div class="code-line">Another line of content here</div>
+                                        <div class="code-line">More <span class="highlight">R</span>andom data in this line</div>
+                                        <div class="code-line">Regular content without matches</div>
+                                        <div class="code-line">Line with <span class="highlight">R</span>andom term again</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Log Panel -->
+                        <div class="log-panel">
+                            <div class="panel-header">
+                                <h3>Log</h3>
+                            </div>
+                            <div class="log-content">
+                                <div class="log-entry">[22:17:46.506] Search parameters: Pattern: 'R', Engine: ripgrep, Type: regex, Case: No, Inverse: No, Boolean: No, Plain: No, Auto: No, Range: 1-999999, Color: #0036f7</div>
+                                <div class="log-entry">[22:17:54.694] Search completed at 22:17:46.506. Found 5335889 results.</div>
+                                <div class="log-entry">[22:17:57.275] 📊 Found 5335889 matches ( files: 4, duration: 6.045882s )</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Status Lamps (at bottom) -->
+                        <div class="status-lamps">
+                            <div class="lamp active">Search Results</div>
+                            <div class="lamp active">Parsing</div>
+                            <div class="lamp">Open File</div>
+                            <div class="lamp">Scroll Highlight</div>
+                            <div class="lamp">Highlight Extra</div>
+                            <div class="lamp">Clean</div>
+                            <div class="lamp">Background Highlight</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why TotalSearch is Different</h2>
+                <p>Built for professionals who need more than basic search functionality</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Ultra-Fast Search</h3>
+                    <p>Powered by ripgrep engine, search through millions of files in seconds. Real-time results as you type.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Smart Highlighting</h3>
+                    <p>Advanced syntax highlighting with custom rules. Viewport-only highlighting for massive files without performance impact.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3>Multi-Pane Interface</h3>
+                    <p>Collapsible search results with file grouping. Detachable panels for flexible workspace layout.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-memory"></i>
+                    </div>
+                    <h3>Intelligent Caching</h3>
+                    <p>Smart file caching system. Keep frequently accessed files in memory for instant navigation.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Advanced Rules Engine</h3>
+                    <p>Custom highlighting rules with regex support. Create your own search patterns and color schemes.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Performance Monitoring</h3>
+                    <p>Real-time status indicators and performance lamps. Monitor search progress and system resources.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Specs -->
+    <section class="tech-specs">
+        <div class="container">
+            <div class="specs-grid">
+                <div class="spec-item">
+                    <h4>Search Engine</h4>
+                    <p>Ripgrep-powered with custom optimizations</p>
+                </div>
+                <div class="spec-item">
+                    <h4>File Support</h4>
+                    <p>All text-based formats, binary file detection</p>
+                </div>
+                <div class="spec-item">
+                    <h4>Performance</h4>
+                    <p>Handles files up to 10GB+ efficiently</p>
+                </div>
+                <div class="spec-item">
+                    <h4>Memory Usage</h4>
+                    <p>Optimized for large codebases</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2>Choose Your Plan</h2>
+                <p>Professional tools for professional users</p>
+            </div>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Personal</h3>
+                        <div class="price">$49</div>
+                        <div class="price-period">one-time</div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Full search functionality</li>
+                        <li><i class="fas fa-check"></i> Advanced highlighting</li>
+                        <li><i class="fas fa-check"></i> File caching system</li>
+                        <li><i class="fas fa-check"></i> Custom rules engine</li>
+                        <li><i class="fas fa-check"></i> 1 year of updates</li>
+                        <li><i class="fas fa-check"></i> Community support</li>
+                    </ul>
+                    <a href="#download" class="btn-primary">Get Personal</a>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Professional</h3>
+                        <div class="price">$149</div>
+                        <div class="price-period">one-time</div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Everything in Personal</li>
+                        <li><i class="fas fa-check"></i> Commercial use license</li>
+                        <li><i class="fas fa-check"></i> Priority support</li>
+                        <li><i class="fas fa-check"></i> Advanced analytics</li>
+                        <li><i class="fas fa-check"></i> 2 years of updates</li>
+                        <li><i class="fas fa-check"></i> Email support</li>
+                    </ul>
+                    <a href="#download" class="btn-primary">Get Professional</a>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Enterprise</h3>
+                        <div class="price">$499</div>
+                        <div class="price-period">one-time</div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Everything in Professional</li>
+                        <li><i class="fas fa-check"></i> Unlimited users</li>
+                        <li><i class="fas fa-check"></i> Phone support</li>
+                        <li><i class="fas fa-check"></i> Custom features</li>
+                        <li><i class="fas fa-check"></i> 3 years of updates</li>
+                        <li><i class="fas fa-check"></i> Training materials</li>
+                    </ul>
+                    <a href="#contact" class="btn-primary">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download">
+        <div class="container">
+            <div class="download-content">
+                <h2>Ready to Transform Your Search Experience?</h2>
+                <p>Download TotalSearch today and see why developers and professionals choose it for their most demanding search tasks.</p>
+                
+                <div class="download-options">
+                    <div class="download-card">
+                        <div class="os-icon">
+                            <i class="fab fa-windows"></i>
+                        </div>
+                        <h4>Windows</h4>
+                        <p>Windows 10/11 (64-bit)</p>
+                        <a href="downloads/TotalSearch-Windows-v1.0.0.zip" class="btn-download">Download for Windows</a>
+                        <small>Free 30-day trial</small>
+                    </div>
+                    
+                    <div class="download-card">
+                        <div class="os-icon">
+                            <i class="fab fa-apple"></i>
+                        </div>
+                        <h4>macOS</h4>
+                        <p>macOS 10.15+ (Intel/Apple Silicon)</p>
+                        <a href="downloads/TotalSearch-macOS-v1.0.0.zip" class="btn-download">Download for macOS</a>
+                        <small>Coming Soon</small>
+                    </div>
+                    
+                    <div class="download-card">
+                        <div class="os-icon">
+                            <i class="fab fa-linux"></i>
+                        </div>
+                        <h4>Linux</h4>
+                        <p>Ubuntu 20.04+, CentOS 8+</p>
+                        <a href="downloads/TotalSearch-Linux-v1.0.0.zip" class="btn-download">Download for Linux</a>
+                        <small>Coming Soon</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-search-plus"></i>
+                        <span>TotalSearch</span>
+                    </div>
+                    <p>Professional file search and text analysis tool for developers and power users.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#download">Download</a></li>
+                        <li><a href="#support">Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                        <li><a href="#license">License</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 TotalSearch. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

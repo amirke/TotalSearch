@@ -1,0 +1,209 @@
+create for me a function 
+Call it K_RGresults(params)
+to look in RG with this parameters:
+
+0) path - full path of library
+
+1) pattern (pattern to search): text. 
+
+2) Fixed_string (the patterns are treated as literal text); True/False
+if True - will create the flag -F afte -e and before the "text"
+
+3) add_pattern (additional pattern to find): text
+this is a regex line with several expressions selimited by | (logic or)
+text can be blank
+
+4) Case_sensitive: T/F
+create the flag -s
+if no param then default
+F-False means not writing the flag
+
+5) ignore_case: T/F
+create the flag -i
+if no param then default
+F-False means not writing the flag
+
+6) smart_case :T/F
+create the flag -S
+if no param then default
+F-False means not writing the flag
+
+7) Incl_Exclude: text
+will include all files from type ext if add flag: -g "*.ext"
+will exclude all files from type ext if add flag: -g "!*.ext"
+if the text has comma between such as text="*.ext,*.drv" then it will create 2 flags  -g "*.ext" -g "*.drv"
+if text=blank do not add flag
+
+then create the command as follows 
+rg -a -n --threads 0 (flags from section 3 to 7) --column --byte-offset --stats --only-matching -e (possible -F, Fixed_string) "pattern|add_pattern" path
+
+Then the result will be inserted into local memory like a datastructure. with different sons.
+parse it 
+for example
+1️⃣ Understand the output format
+Each block in the output has:
+
+File path (e.g., C:\Temp\ex1\data1\ddsdws.txt)
+
+One or more match lines:
+
+ruby
+Copy
+Edit
+<byte_offset>:<line_number>:<column>:<match>
+Example:
+
+makefile
+Copy
+Edit
+2988117:109:343957717:161435
+2988117 = byte offset (start of match)
+
+109 = line number
+
+343957717 = column (because you used --column --byte-offset)
+
+161435 = match text (because of --only-matching)
+
+At the bottom, ripgrep prints stats:
+
+python-repl
+Copy
+Edit
+28 matches
+27 matched lines
+3 files contained matches
+3 files searched
+...
+2️⃣ Data structure to store the results
+In C++ (or similar), we can use:
+
+cpp
+Copy
+Edit
+struct Match {
+    long byte_offset;
+    int line_number;
+    long column;
+    std::string match;
+};
+
+std::map<std::string, std::vector<Match>> results_by_file;
+Key: File path
+
+Value: Vector of all matches for that file.
+
+3️⃣ Example parsing logic
+Pseudocode:
+
+cpp
+Copy
+Edit
+std::string current_file;
+for each line in rg_output:
+    if (line is a file path) {
+        current_file = line;
+    }
+    else if (line matches "<offset>:<line>:<column>:<match>") {
+        parse numbers and match text;
+        results_by_file[current_file].push_back({offset, line, column, match});
+    }
+    else if (line is stats) {
+        // extract numbers for total statistics
+    }
+4️⃣ Sample C++ example
+cpp
+Copy
+Edit
+#include <iostream>
+#include <fstream>
+#include <regex>
+#include <map>
+#include <vector>
+
+struct Match {
+    long byte_offset;
+    int line_number;
+    long column;
+    std::string match;
+};
+
+int main() {
+    std::map<std::string, std::vector<Match>> results;
+    std::regex match_line(R"(^(\d+):(\d+):(\d+):(.+)$)");
+
+    std::string line, current_file;
+    while (std::getline(std::cin, line)) {
+        std::smatch m;
+        if (line.find(':') == std::string::npos) {
+            // File path (no colons other than drive letter)
+            current_file = line;
+        }
+        else if (std::regex_match(line, m, match_line)) {
+            // Match line
+            Match match{
+                std::stol(m[1]),   // byte offset
+                std::stoi(m[2]),   // line number
+                std::stol(m[3]),   // column
+                m[4]               // matched string
+            };
+            results[current_file].push_back(match);
+        }
+        // else: stats lines → parse if needed
+    }
+
+    // Example usage: print per-file stats
+    for (auto& [file, matches] : results) {
+        std::cout << "File: " << file << " → " << matches.size() << " matches\n";
+    }
+}
+
+
+Create a function to map all files in results
+Call it KMapParsedFiles()
+
+it will take from the data structure - the files that found
+and on each file will do a mapping command.
+Like this:
+rg -a --threads 0 --mmap --byte-offset -n --only-matching "^" C:\Temp\ex1\data1\ddsdws.txt
+It will create a structure to the viewer to use it to display lines
+
+
+Create it in a KSearchBun.cpp file
+
+Then create a button, near "Find in File" 
+call it "RG search"
+
+it will open a window
+With the following:
+
+0) path - full path of library. 
+with a browse button to choose the path/
+
+1) pattern field : text. 
+ (when hover - pattern to search)
+
+2) Fixed_string checkbox
+(when hovered - the patterns are treated as literal text);
+
+3) add_pattern field :text 
+(when hovered - additional pattern to find, seperarted by logical or "|")
+this is a regex line with several expressions selimited by | (logic or)
+
+4) Case_sensitive checkbox
+
+5) ignore_case checkbox
+
+6) smart_case checkbox
+
+7) Incl_Exclude field: text
+(when hovered than explain like this: will include all files from type ext if add flag: -g "*.ext"
+will exclude all files from type ext if add flag: -g "!*.ext"
+if the text has comma between such as text="*.ext,*.drv" then it will create 2 flags  -g "*.ext" -g "*.drv")
+
+
+and a search button
+
+when search button is pressed launch the K_RGresults function, get the data structure.
+Then launch KMapParsedFiles function
+Add debug log in the process with time stamp so i can see timing and flow

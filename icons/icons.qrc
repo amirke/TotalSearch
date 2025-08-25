@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/icons">
+        <!-- Application icons -->
+        <file>app_icon.ico</file>
+        <file>taskbar_icon.ico</file>
+        
+        <!-- Pane control icons -->
+        <file>detach_pane.png</file>
+        <file>attach_pane.png</file>
+        <file>search_results.png</file>
+        <file>file_viewer.png</file>
+        <file>close_window.png</file>
+        <file>maximize_window.png</file>
+        
+        <!-- Existing icons -->
+        <file>save.png</file>
+        <file>open.png</file>
+        <file>file.png</file>
+        <file>list.png</file>
+        <file>clear.png</file>
+        <file>search.png</file>
+    </qresource>
+</RCC>

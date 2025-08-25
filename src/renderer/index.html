@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TotalSearch - Advanced File Search & Log Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-left">
+                <h1><i class="fas fa-search"></i> TotalSearch</h1>
+            </div>
+            <div class="header-right">
+                <button id="openFileBtn" class="btn btn-primary">
+                    <i class="fas fa-file"></i> Open File
+                </button>
+                <button id="openFolderBtn" class="btn btn-secondary">
+                    <i class="fas fa-folder"></i> Open Folder
+                </button>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="sidebar-section">
+                    <h3><i class="fas fa-search"></i> Search</h3>
+                    <div class="search-controls">
+                        <input type="text" id="searchInput" placeholder="Enter search pattern..." class="search-input">
+                        <div class="search-options">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="caseSensitive">
+                                Case Sensitive
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="useRegex">
+                                Use Regex
+                            </label>
+                        </div>
+                        <div class="file-types">
+                            <h4>File Types</h4>
+                            <div class="file-type-filters">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value=".txt" checked> .txt
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value=".log" checked> .log
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value=".md"> .md
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value=".json"> .json
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value=".js"> .js
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value=".ts"> .ts
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value=".py"> .py
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value=".java"> .java
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value=".cpp"> .cpp
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value=".c"> .c
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value=".h"> .h
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value=".xml"> .xml
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value=".csv"> .csv
+                                </label>
+                            </div>
+                        </div>
+                        <button id="searchBtn" class="btn btn-primary btn-full">
+                            <i class="fas fa-search"></i> Search Files
+                        </button>
+                    </div>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3><i class="fas fa-file-alt"></i> Current File</h3>
+                    <div id="currentFileInfo" class="file-info">
+                        <p>No file selected</p>
+                    </div>
+                    <div class="file-controls">
+                        <button id="watchFileBtn" class="btn btn-secondary btn-small" disabled>
+                            <i class="fas fa-eye"></i> Watch File
+                        </button>
+                        <button id="unwatchFileBtn" class="btn btn-secondary btn-small" disabled>
+                            <i class="fas fa-eye-slash"></i> Stop Watching
+                        </button>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Content Area -->
+            <main class="content">
+                <!-- Tabs -->
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="search-results">
+                        <i class="fas fa-list"></i> Search Results
+                    </button>
+                    <button class="tab-btn" data-tab="file-viewer">
+                        <i class="fas fa-file-alt"></i> File Viewer
+                    </button>
+                    <button class="tab-btn" data-tab="log-viewer">
+                        <i class="fas fa-stream"></i> Log Viewer
+                    </button>
+                </div>
+
+                <!-- Tab Content -->
+                <div class="tab-content">
+                    <!-- Search Results Tab -->
+                    <div id="search-results" class="tab-pane active">
+                        <div class="results-header">
+                            <h3>Search Results</h3>
+                            <div class="results-stats" id="resultsStats">
+                                <span id="resultsCount">0 results</span>
+                                <span id="searchTime"></span>
+                            </div>
+                        </div>
+                        <div id="searchResults" class="results-container">
+                            <div class="empty-state">
+                                <i class="fas fa-search"></i>
+                                <p>Enter a search pattern and click "Search Files" to find matches</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- File Viewer Tab -->
+                    <div id="file-viewer" class="tab-pane">
+                        <div class="viewer-header">
+                            <h3>File Viewer</h3>
+                            <div class="viewer-controls">
+                                <button id="goToLineBtn" class="btn btn-secondary btn-small">
+                                    <i class="fas fa-arrow-right"></i> Go to Line
+                                </button>
+                                <button id="findInFileBtn" class="btn btn-secondary btn-small">
+                                    <i class="fas fa-search"></i> Find in File
+                                </button>
+                            </div>
+                        </div>
+                        <div id="fileViewer" class="file-viewer">
+                            <div class="empty-state">
+                                <i class="fas fa-file-alt"></i>
+                                <p>Open a file to view its contents</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Log Viewer Tab -->
+                    <div id="log-viewer" class="tab-pane">
+                        <div class="viewer-header">
+                            <h3>Log Viewer</h3>
+                            <div class="viewer-controls">
+                                <button id="autoScrollBtn" class="btn btn-secondary btn-small active">
+                                    <i class="fas fa-arrow-down"></i> Auto Scroll
+                                </button>
+                                <button id="clearLogBtn" class="btn btn-secondary btn-small">
+                                    <i class="fas fa-trash"></i> Clear
+                                </button>
+                            </div>
+                        </div>
+                        <div id="logViewer" class="log-viewer">
+                            <div class="empty-state">
+                                <i class="fas fa-stream"></i>
+                                <p>Watch a log file to see real-time updates</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- Status Bar -->
+        <footer class="status-bar">
+            <div class="status-left">
+                <span id="statusText">Ready</span>
+            </div>
+            <div class="status-right">
+                <span id="filePath">No file selected</span>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modals -->
+    <div id="goToLineModal" class="modal">
+        <div class="modal-content">
+            <h3>Go to Line</h3>
+            <input type="number" id="lineNumberInput" placeholder="Enter line number" min="1">
+            <div class="modal-buttons">
+                <button id="goToLineConfirm" class="btn btn-primary">Go</button>
+                <button id="goToLineCancel" class="btn btn-secondary">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="findInFileModal" class="modal">
+        <div class="modal-content">
+            <h3>Find in File</h3>
+            <input type="text" id="findInFileInput" placeholder="Enter search term">
+            <div class="find-options">
+                <label class="checkbox-label">
+                    <input type="checkbox" id="findCaseSensitive"> Case Sensitive
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox" id="findUseRegex"> Use Regex
+                </label>
+            </div>
+            <div class="modal-buttons">
+                <button id="findInFileConfirm" class="btn btn-primary">Find</button>
+                <button id="findInFileCancel" class="btn btn-secondary">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="renderer.js"></script>
+</body>
+</html> 

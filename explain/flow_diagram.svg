@@ -1,0 +1,261 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: Arial, sans-serif; font-size: 24px; font-weight: bold; fill: #2c3e50; }
+      .subtitle { font-family: Arial, sans-serif; font-size: 18px; font-weight: bold; fill: #34495e; }
+      .button { fill: #3498db; stroke: #2980b9; stroke-width: 2; }
+      .function { fill: #e74c3c; stroke: #c0392b; stroke-width: 2; }
+      .worker { fill: #f39c12; stroke: #e67e22; stroke-width: 2; }
+      .view { fill: #27ae60; stroke: #229954; stroke-width: 2; }
+      .dialog { fill: #9b59b6; stroke: #8e44ad; stroke-width: 2; }
+      .text { font-family: Arial, sans-serif; font-size: 12px; fill: #2c3e50; }
+      .arrow { stroke: #2c3e50; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+      .flow-text { font-family: Arial, sans-serif; font-size: 10px; fill: #7f8c8d; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" />
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="600" y="30" text-anchor="middle" class="title">TotalSearch Application - K-Functions Flow Diagram</text>
+  
+  <!-- Open File2 Flow -->
+  <g transform="translate(50, 80)">
+    <text x="0" y="0" class="subtitle">"Open File2" Button Flow</text>
+    
+    <!-- Button -->
+    <rect x="0" y="20" width="120" height="40" rx="5" class="button"/>
+    <text x="60" y="42" text-anchor="middle" class="text">Open File2</text>
+    
+    <!-- Function calls -->
+    <rect x="150" y="20" width="120" height="40" rx="5" class="function"/>
+    <text x="210" y="42" text-anchor="middle" class="text">openFile2()</text>
+    
+    <rect x="300" y="20" width="120" height="40" rx="5" class="function"/>
+    <text x="360" y="42" text-anchor="middle" class="text">KClean()</text>
+    
+    <rect x="450" y="20" width="120" height="40" rx="5" class="function"/>
+    <text x="510" y="42" text-anchor="middle" class="text">KOpenFile()</text>
+    
+    <rect x="600" y="20" width="120" height="40" rx="5" class="worker"/>
+    <text x="660" y="42" text-anchor="middle" class="text">LogDataWorker</text>
+    
+    <rect x="750" y="20" width="120" height="40" rx="5" class="function"/>
+    <text x="810" y="42" text-anchor="middle" class="text">KDisplayFile()</text>
+    
+    <rect x="900" y="20" width="120" height="40" rx="5" class="view"/>
+    <text x="960" y="42" text-anchor="middle" class="text">LogMainView</text>
+    
+    <!-- Arrows -->
+    <line x1="120" y1="40" x2="150" y2="40" class="arrow"/>
+    <line x1="270" y1="40" x2="300" y2="40" class="arrow"/>
+    <line x1="420" y1="40" x2="450" y2="40" class="arrow"/>
+    <line x1="570" y1="40" x2="600" y2="40" class="arrow"/>
+    <line x1="720" y1="40" x2="750" y2="40" class="arrow"/>
+    <line x1="870" y1="40" x2="900" y2="40" class="arrow"/>
+    
+    <!-- Flow labels -->
+    <text x="135" y="35" class="flow-text">Button Click</text>
+    <text x="285" y="35" class="flow-text">Clean State</text>
+    <text x="435" y="35" class="flow-text">Load File</text>
+    <text x="585" y="35" class="flow-text">Background Index</text>
+    <text x="735" y="35" class="flow-text">Display</text>
+    <text x="885" y="35" class="flow-text">Show Content</text>
+  </g>
+  
+  <!-- Scroll to Line Flow -->
+  <g transform="translate(50, 180)">
+    <text x="0" y="0" class="subtitle">"Scroll to Line" Button Flow</text>
+    
+    <!-- Button -->
+    <rect x="0" y="20" width="120" height="40" rx="5" class="button"/>
+    <text x="60" y="42" text-anchor="middle" class="text">Scroll to Line</text>
+    
+    <!-- Function calls -->
+    <rect x="150" y="20" width="120" height="40" rx="5" class="function"/>
+    <text x="210" y="42" text-anchor="middle" class="text">KScrollToLine()</text>
+    
+    <rect x="300" y="20" width="120" height="40" rx="5" class="dialog"/>
+    <text x="360" y="42" text-anchor="middle" class="text">QInputDialog</text>
+    
+    <rect x="450" y="20" width="120" height="40" rx="5" class="function"/>
+    <text x="510" y="42" text-anchor="middle" class="text">Validate Line</text>
+    
+    <rect x="600" y="20" width="120" height="40" rx="5" class="view"/>
+    <text x="660" y="42" text-anchor="middle" class="text">scrollToLine()</text>
+    
+    <rect x="750" y="20" width="120" height="40" rx="5" class="view"/>
+    <text x="810" y="42" text-anchor="middle" class="text">setHighlightedLine()</text>
+    
+    <!-- Arrows -->
+    <line x1="120" y1="40" x2="150" y2="40" class="arrow"/>
+    <line x1="270" y1="40" x2="300" y2="40" class="arrow"/>
+    <line x1="420" y1="40" x2="450" y2="40" class="arrow"/>
+    <line x1="570" y1="40" x2="600" y2="40" class="arrow"/>
+    <line x1="720" y1="40" x2="750" y2="40" class="arrow"/>
+    
+    <!-- Flow labels -->
+    <text x="135" y="35" class="flow-text">Button Click</text>
+    <text x="285" y="35" class="flow-text">Get Line Number</text>
+    <text x="435" y="35" class="flow-text">Validate Range</text>
+    <text x="585" y="35" class="flow-text">Scroll to Line</text>
+    <text x="735" y="35" class="flow-text">Highlight Line</text>
+  </g>
+  
+  <!-- Find in File Flow -->
+  <g transform="translate(50, 280)">
+    <text x="0" y="0" class="subtitle">"Find in File" Button Flow</text>
+    
+    <!-- Button -->
+    <rect x="0" y="20" width="120" height="40" rx="5" class="button"/>
+    <text x="60" y="42" text-anchor="middle" class="text">Find in File</text>
+    
+    <!-- Function calls -->
+    <rect x="150" y="20" width="120" height="40" rx="5" class="function"/>
+    <text x="210" y="42" text-anchor="middle" class="text">KFindInFile()</text>
+    
+    <rect x="300" y="20" width="120" height="40" rx="5" class="dialog"/>
+    <text x="360" y="42" text-anchor="middle" class="text">SearchDialog</text>
+    
+    <rect x="450" y="20" width="120" height="40" rx="5" class="worker"/>
+    <text x="510" y="42" text-anchor="middle" class="text">searchInFileSync()</text>
+    
+    <rect x="600" y="20" width="120" height="40" rx="5" class="function"/>
+    <text x="660" y="42" text-anchor="middle" class="text">Calculate Time</text>
+    
+    <rect x="750" y="20" width="120" height="40" rx="5" class="view"/>
+    <text x="810" y="42" text-anchor="middle" class="text">setSearchResults()</text>
+    
+    <!-- Arrows -->
+    <line x1="120" y1="40" x2="150" y2="40" class="arrow"/>
+    <line x1="270" y1="40" x2="300" y2="40" class="arrow"/>
+    <line x1="420" y1="40" x2="450" y2="40" class="arrow"/>
+    <line x1="570" y1="40" x2="600" y2="40" class="arrow"/>
+    <line x1="720" y1="40" x2="750" y2="40" class="arrow"/>
+    
+    <!-- Flow labels -->
+    <text x="135" y="35" class="flow-text">Button Click</text>
+    <text x="285" y="35" class="flow-text">Configure Search</text>
+    <text x="435" y="35" class="flow-text">Search File</text>
+    <text x="585" y="35" class="flow-text">Measure Time</text>
+    <text x="735" y="35" class="flow-text">Highlight Results</text>
+  </g>
+  
+  <!-- Background Processing -->
+  <g transform="translate(50, 380)">
+    <text x="0" y="0" class="subtitle">Background Processing</text>
+    
+    <!-- Worker Thread -->
+    <rect x="0" y="20" width="200" height="60" rx="5" class="worker"/>
+    <text x="100" y="40" text-anchor="middle" class="text">LogDataWorker Thread</text>
+    <text x="100" y="55" text-anchor="middle" class="text">Background Operations</text>
+    
+    <!-- Indexing Process -->
+    <rect x="250" y="20" width="150" height="40" rx="5" class="function"/>
+    <text x="325" y="42" text-anchor="middle" class="text">doIndexing()</text>
+    
+    <!-- Search Process -->
+    <rect x="450" y="20" width="150" height="40" rx="5" class="function"/>
+    <text x="525" y="42" text-anchor="middle" class="text">doSearch()</text>
+    
+    <!-- Progress Reporting -->
+    <rect x="650" y="20" width="150" height="40" rx="5" class="function"/>
+    <text x="725" y="42" text-anchor="middle" class="text">Progress Messages</text>
+    
+    <!-- Arrows -->
+    <line x1="200" y1="50" x2="250" y2="40" class="arrow"/>
+    <line x1="200" y1="50" x2="450" y2="40" class="arrow"/>
+    <line x1="200" y1="50" x2="650" y2="40" class="arrow"/>
+    
+    <!-- Process details -->
+    <text x="325" y="35" class="flow-text">File Indexing</text>
+    <text x="525" y="35" class="flow-text">Search Processing</text>
+    <text x="725" y="35" class="flow-text">UI Updates</text>
+  </g>
+  
+  <!-- Error Handling -->
+  <g transform="translate(50, 480)">
+    <text x="0" y="0" class="subtitle">Error Handling</text>
+    
+    <rect x="0" y="20" width="120" height="40" rx="5" class="function"/>
+    <text x="60" y="42" text-anchor="middle" class="text">File Not Found</text>
+    
+    <rect x="150" y="20" width="120" height="40" rx="5" class="function"/>
+    <text x="210" y="42" text-anchor="middle" class="text">File Too Large</text>
+    
+    <rect x="300" y="20" width="120" height="40" rx="5" class="function"/>
+    <text x="360" y="42" text-anchor="middle" class="text">Invalid Pattern</text>
+    
+    <rect x="450" y="20" width="120" height="40" rx="5" class="function"/>
+    <text x="510" y="42" text-anchor="middle" class="text">Indexing Failed</text>
+  </g>
+  
+  <!-- Settings Management -->
+  <g transform="translate(50, 560)">
+    <text x="0" y="0" class="subtitle">Settings Management</text>
+    
+    <rect x="0" y="20" width="120" height="40" rx="5" class="function"/>
+    <text x="60" y="42" text-anchor="middle" class="text">loadSettings()</text>
+    
+    <rect x="150" y="20" width="120" height="40" rx="5" class="function"/>
+    <text x="210" y="42" text-anchor="middle" class="text">saveSettings()</text>
+    
+    <rect x="300" y="20" width="120" height="40" rx="5" class="function"/>
+    <text x="360" y="42" text-anchor="middle" class="text">saveFindInFile</text>
+    
+    <rect x="450" y="20" width="120" height="40" rx="5" class="function"/>
+    <text x="510" y="42" text-anchor="middle" class="text">loadFindInFile</text>
+  </g>
+  
+  <!-- Legend -->
+  <g transform="translate(900, 80)">
+    <text x="0" y="0" class="subtitle">Legend</text>
+    
+    <rect x="0" y="20" width="20" height="20" class="button"/>
+    <text x="30" y="35" class="text">UI Buttons</text>
+    
+    <rect x="0" y="50" width="20" height="20" class="function"/>
+    <text x="30" y="65" class="text">K-Functions</text>
+    
+    <rect x="0" y="80" width="20" height="20" class="worker"/>
+    <text x="30" y="95" class="text">Background Workers</text>
+    
+    <rect x="0" y="110" width="20" height="20" class="view"/>
+    <text x="30" y="125" class="text">Display Views</text>
+    
+    <rect x="0" y="140" width="20" height="20" class="dialog"/>
+    <text x="30" y="155" class="text">Dialogs</text>
+  </g>
+  
+  <!-- Key Features -->
+  <g transform="translate(900, 280)">
+    <text x="0" y="0" class="subtitle">Key Features</text>
+    
+    <text x="0" y="25" class="text">• Asynchronous File Indexing</text>
+    <text x="0" y="40" class="text">• Background Search Processing</text>
+    <text x="0" y="55" class="text">• Real-time Progress Reporting</text>
+    <text x="0" y="70" class="text">• Search Time Measurement</text>
+    <text x="0" y="85" class="text">• Settings Persistence</text>
+    <text x="0" y="100" class="text">• Error Handling & Validation</text>
+    <text x="0" y="115" class="text">• Responsive UI Design</text>
+  </g>
+  
+  <!-- File Structure -->
+  <g transform="translate(900, 480)">
+    <text x="0" y="0" class="subtitle">File Structure</text>
+    
+    <text x="0" y="25" class="text">src/mainwindow.cpp</text>
+    <text x="0" y="40" class="text">src/LogDataWorker.h/cpp</text>
+    <text x="0" y="55" class="text">src/LogMainView.h/cpp</text>
+    <text x="0" y="70" class="text">src/searchdialog.h/cpp</text>
+    <text x="0" y="85" class="text">src/scintillaedit.h/cpp</text>
+  </g>
+  
+  <!-- Footer -->
+  <text x="600" y="780" text-anchor="middle" class="text">TotalSearch Application - K-Functions Flow Diagram</text>
+</svg>

@@ -1,0 +1,199 @@
+# TotalSearch Application Flow Diagram
+# UML Sequence Diagram Format
+
+title TotalSearch Application - K-Functions Flow
+
+participant "User" as U
+participant "MainWindow" as MW
+participant "LogDataWorker" as LDW
+participant "LogMainView" as LMV
+participant "SearchDialog" as SD
+participant "QFileDialog" as QFD
+participant "QInputDialog" as QID
+participant "ScintillaEdit" as SE
+
+== Application Startup ==
+U -> MW: Launch Application
+MW -> MW: Constructor()
+MW -> MW: setupUI()
+MW -> MW: loadSettings()
+MW -> MW: applyLayoutSettings()
+MW -> MW: applyViewerSettings()
+MW -> U: Display Main Window
+
+== "Open File2" Button Flow ==
+U -> MW: Click "Open File2" Button
+MW -> MW: openFile2()
+MW -> MW: KClean()
+note over MW: Clean up previous state
+MW -> LDW: interrupt() [if exists]
+MW -> LMV: clear()
+MW -> SE: clearText()
+MW -> LMV: hide()
+MW -> SE: hide()
+
+MW -> QFD: getOpenFileName()
+QFD -> U: Show File Dialog
+U -> QFD: Select File
+QFD -> MW: Return fileName
+
+MW -> MW: KOpenFile(fileName)
+MW -> LDW: new LogDataWorker()
+MW -> LMV: setLogDataWorker(LDW)
+MW -> LDW: startIndexing(fileName)
+note over LDW: Background indexing starts
+
+LDW -> LDW: doIndexing()
+note over LDW: Process file in chunks
+LDW -> MW: progressMessage()
+LDW -> MW: indexingProgressed(percent)
+
+LDW -> MW: indexingFinished(success)
+alt success == true
+    MW -> MW: KDisplayFile()
+    MW -> SE: hide()
+    MW -> LMV: show()
+    MW -> LMV: updateViewport()
+    LMV -> LMV: calculateVisibleLines()
+    LMV -> LDW: getLines(firstLine, count)
+    LMV -> LMV: paintEvent()
+    MW -> U: Display File Content
+else success == false
+    MW -> U: Show Error Message
+end
+
+== "Scroll to Line" Button Flow ==
+U -> MW: Click "Scroll to Line" Button
+MW -> MW: KScrollToLine(-1)
+MW -> MW: Check if file loaded
+alt file not loaded
+    MW -> U: Show "No file loaded" error
+else file loaded
+    MW -> QID: getInt("Enter line number")
+    QID -> U: Show Line Input Dialog
+    U -> QID: Enter line number
+    QID -> MW: Return lineNumber
+    
+    MW -> MW: Validate lineNumber
+    alt lineNumber valid
+        MW -> LMV: scrollToLine(lineNumber-1)
+        LMV -> LMV: calculateVisibleLines()
+        LMV -> LMV: updateScrollBars()
+        MW -> LMV: setHighlightedLine(lineNumber-1)
+        LMV -> LMV: paintEvent()
+        MW -> U: Display Scrolled View with Highlight
+    else lineNumber invalid
+        MW -> U: Show "Invalid line number" error
+    end
+end
+
+== "Find in File" Button Flow ==
+U -> MW: Click "Find in File" Button
+MW -> MW: KFindInFile()
+MW -> MW: Check if file loaded
+alt file not loaded
+    MW -> U: Show "No file loaded" error
+else file loaded
+    MW -> SD: new SearchDialog()
+    MW -> SD: setPattern(m_findInFilePattern)
+    MW -> SD: setSearchEngine(m_findInFileEngine)
+    MW -> SD: setSearchType(m_findInFileType)
+    MW -> SD: setCaseSensitive(m_findInFileCaseSensitive)
+    MW -> SD: setInverse(m_findInFileInverse)
+    MW -> SD: setBoolean(m_findInFileBoolean)
+    MW -> SD: setPlainText(m_findInFilePlainText)
+    MW -> SD: setAutoRefresh(m_findInFileAutoRefresh)
+    MW -> SD: setStartLine(m_findInFileStartLine)
+    MW -> SD: setEndLine(m_findInFileEndLine)
+    MW -> SD: setHighlightColor(m_findInFileHighlightColor)
+    
+    MW -> SD: exec()
+    SD -> U: Show Search Dialog
+    U -> SD: Configure search parameters
+    U -> SD: Click "Search" or "Cancel"
+    SD -> MW: Return dialog result
+    
+    alt dialog accepted
+        MW -> SD: getPattern()
+        MW -> SD: getSearchEngine()
+        MW -> SD: getSearchType()
+        MW -> SD: isCaseSensitive()
+        MW -> SD: isInverse()
+        MW -> SD: isBoolean()
+        MW -> SD: isPlainText()
+        MW -> SD: getStartLine()
+        MW -> SD: getEndLine()
+        MW -> SD: getHighlightColor()
+        
+        MW -> MW: Update memory variables
+        MW -> MW: saveFindInFileSettings()
+        
+        MW -> MW: QElapsedTimer::start()
+        MW -> LDW: searchInFileSync(pattern, caseSensitive, inverse, boolean, plainText, startLine, endLine)
+        LDW -> LDW: doSearch()
+        note over LDW: Process file line by line
+        LDW -> MW: Return searchResults
+        
+        MW -> MW: QElapsedTimer::elapsed()
+        MW -> MW: Calculate search time
+        
+        alt searchResults empty
+            MW -> LMV: clearSearchResults()
+            MW -> U: Show "No matches found"
+        else searchResults found
+            MW -> LMV: setSearchResults(searchResults, highlightColor)
+            LMV -> LMV: paintEvent()
+            MW -> U: Display highlighted search results
+        end
+        
+        MW -> U: Show search time message
+    else dialog cancelled
+        MW -> U: Search cancelled
+    end
+end
+
+== Background Processing ==
+note over LDW: Worker Thread Operations
+LDW -> LDW: doIndexing()
+loop for each file chunk
+    LDW -> LDW: parseDataBlock()
+    LDW -> LDW: findNextLineFeed()
+    LDW -> MW: progressMessage()
+    LDW -> MW: indexingProgressed(percent)
+end
+
+LDW -> LDW: doSearch()
+loop for each line in range
+    LDW -> LDW: loadLineContent(lineIndex)
+    LDW -> LDW: applySearchPattern()
+    alt line matches
+        LDW -> LDW: addToSearchResults()
+    end
+end
+
+== Display Updates ==
+note over LMV: Viewport Management
+LMV -> LMV: updateViewport()
+LMV -> LMV: calculateVisibleLines()
+LMV -> LDW: getLines(firstVisibleLine, visibleLineCount)
+LMV -> LMV: paintEvent()
+LMV -> LMV: drawLine() [for each visible line]
+
+== Error Handling ==
+note over MW: Error Scenarios
+alt file not found
+    MW -> U: Show "File not found" error
+else file too large
+    MW -> U: Show "File too large" warning
+else invalid search pattern
+    MW -> U: Show "Invalid regex" error
+else indexing failed
+    MW -> U: Show "Indexing failed" error
+end
+
+== Settings Management ==
+note over MW: Persistence
+MW -> MW: loadSettings()
+MW -> MW: saveSettings()
+MW -> MW: saveFindInFileSettings()
+MW -> MW: loadFindInFileSettings() 

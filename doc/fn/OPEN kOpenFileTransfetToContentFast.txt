@@ -1,0 +1,19 @@
+Open file using memory map read.
+	open file 
+	Read directly from memory. create pointer to file
+	read if in the first 1M there are null? if yes read for the whole file and replace then with ""
+	
+	transfer file to scintillaedit
+	
+	release mem mapping
+	
+	If read failed then noraml bulk read, with null detection and replacement
+	
+	output 
+	
+	
+
+
+updateFilenameDisplay - create filenameLabel with: 1) displayText 2) tooltip
+	displayText = "File: " + fileName.left(47) + "..."
+	

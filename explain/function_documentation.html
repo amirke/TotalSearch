@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TotalSearch Application - Complete Function Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .function-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .function-table th, .function-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        .function-table th {
+            background-color: #3498db;
+            color: white;
+            font-weight: bold;
+        }
+        .function-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .function-table tr:hover {
+            background-color: #e8f4fd;
+        }
+        .status-used {
+            background-color: #d4edda;
+            color: #155724;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .status-unused {
+            background-color: #f8d7da;
+            color: #721c24;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .status-k-function {
+            background-color: #fff3cd;
+            color: #856404;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .flow-diagram {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border: 2px solid #dee2e6;
+        }
+        .flow-section {
+            margin: 20px 0;
+            padding: 15px;
+            background: white;
+            border-radius: 5px;
+            border-left: 4px solid #3498db;
+        }
+        .flow-section h4 {
+            color: #2c3e50;
+            margin-top: 0;
+        }
+        .flow-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .flow-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+            position: relative;
+        }
+        .flow-list li:before {
+            content: "→ ";
+            color: #3498db;
+            font-weight: bold;
+        }
+        .flow-list li:last-child:before {
+            content: "✓ ";
+            color: #27ae60;
+        }
+        .file-section {
+            background: #e8f4fd;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        .file-section h4 {
+            color: #2c3e50;
+            margin-top: 0;
+        }
+        .function-category {
+            margin: 20px 0;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 5px;
+            border-left: 4px solid #e74c3c;
+        }
+        .function-category h3 {
+            color: #e74c3c;
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔧 TotalSearch Application - Complete Function Documentation</h1>
+        
+        <h2>📊 Complete Function Table</h2>
+        
+        <table class="function-table">
+            <thead>
+                <tr>
+                    <th>Function Name</th>
+                    <th>File Location</th>
+                    <th>Class</th>
+                    <th>Status</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- MainWindow Functions -->
+                <tr>
+                    <td>openFile()</td>
+                    <td>src/mainwindow.h</td>
+                    <td>MainWindow</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Original file opening function</td>
+                </tr>
+                <tr>
+                    <td>openFile2()</td>
+                    <td>src/mainwindow.h</td>
+                    <td>MainWindow</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Enhanced file opening with K-functions</td>
+                </tr>
+                <tr>
+                    <td>saveFile()</td>
+                    <td>src/mainwindow.h</td>
+                    <td>MainWindow</td>
+                    <td><span class="status-unused">UNUSED</span></td>
+                    <td>File saving functionality</td>
+                </tr>
+                <tr>
+                    <td>searchText()</td>
+                    <td>src/mainwindow.h</td>
+                    <td>MainWindow</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Text search functionality</td>
+                </tr>
+                <tr>
+                    <td>clearSearch()</td>
+                    <td>src/mainwindow.h</td>
+                    <td>MainWindow</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Clear search results</td>
+                </tr>
+                <tr>
+                    <td>KClean()</td>
+                    <td>src/mainwindow.h</td>
+                    <td>MainWindow</td>
+                    <td><span class="status-k-function">K-FUNCTION</span></td>
+                    <td>Centralized cleanup function</td>
+                </tr>
+                <tr>
+                    <td>KOpenFile()</td>
+                    <td>src/mainwindow.h</td>
+                    <td>MainWindow</td>
+                    <td><span class="status-k-function">K-FUNCTION</span></td>
+                    <td>File indexing and loading</td>
+                </tr>
+                <tr>
+                    <td>KDisplayFile()</td>
+                    <td>src/mainwindow.h</td>
+                    <td>MainWindow</td>
+                    <td><span class="status-k-function">K-FUNCTION</span></td>
+                    <td>File display and rendering</td>
+                </tr>
+                <tr>
+                    <td>KFindInFile()</td>
+                    <td>src/mainwindow.h</td>
+                    <td>MainWindow</td>
+                    <td><span class="status-k-function">K-FUNCTION</span></td>
+                    <td>Find in file functionality</td>
+                </tr>
+                <tr>
+                    <td>KScrollToLine()</td>
+                    <td>src/mainwindow.h</td>
+                    <td>MainWindow</td>
+                    <td><span class="status-k-function">K-FUNCTION</span></td>
+                    <td>Scroll to specific line</td>
+                </tr>
+                
+                <!-- LogDataWorker Functions -->
+                <tr>
+                    <td>startIndexing()</td>
+                    <td>src/LogDataWorker.h</td>
+                    <td>LogDataWorker</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Start file indexing process</td>
+                </tr>
+                <tr>
+                    <td>interrupt()</td>
+                    <td>src/LogDataWorker.h</td>
+                    <td>LogDataWorker</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Interrupt current operation</td>
+                </tr>
+                <tr>
+                    <td>isIndexing()</td>
+                    <td>src/LogDataWorker.h</td>
+                    <td>LogDataWorker</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Check if indexing is in progress</td>
+                </tr>
+                <tr>
+                    <td>getLine()</td>
+                    <td>src/LogDataWorker.h</td>
+                    <td>LogDataWorker</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Get line by index</td>
+                </tr>
+                <tr>
+                    <td>getLines()</td>
+                    <td>src/LogDataWorker.h</td>
+                    <td>LogDataWorker</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Get multiple lines for viewport</td>
+                </tr>
+                <tr>
+                    <td>getTotalLines()</td>
+                    <td>src/LogDataWorker.h</td>
+                    <td>LogDataWorker</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Get total number of lines</td>
+                </tr>
+                <tr>
+                    <td>isFileLoaded()</td>
+                    <td>src/LogDataWorker.h</td>
+                    <td>LogDataWorker</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Check if file is loaded</td>
+                </tr>
+                <tr>
+                    <td>getFilePath()</td>
+                    <td>src/LogDataWorker.h</td>
+                    <td>LogDataWorker</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Get current file path</td>
+                </tr>
+                <tr>
+                    <td>searchInFile()</td>
+                    <td>src/LogDataWorker.h</td>
+                    <td>LogDataWorker</td>
+                    <td><span class="status-unused">UNUSED</span></td>
+                    <td>Asynchronous search in file</td>
+                </tr>
+                <tr>
+                    <td>searchInFileSync()</td>
+                    <td>src/LogDataWorker.h</td>
+                    <td>LogDataWorker</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Synchronous search in file</td>
+                </tr>
+                <tr>
+                    <td>getSearchResults()</td>
+                    <td>src/LogDataWorker.h</td>
+                    <td>LogDataWorker</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Get search results</td>
+                </tr>
+                <tr>
+                    <td>clearSearchResults()</td>
+                    <td>src/LogDataWorker.h</td>
+                    <td>LogDataWorker</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Clear search results</td>
+                </tr>
+                <tr>
+                    <td>hasSearchResults()</td>
+                    <td>src/LogDataWorker.h</td>
+                    <td>LogDataWorker</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Check if search results exist</td>
+                </tr>
+                <tr>
+                    <td>isSearching()</td>
+                    <td>src/LogDataWorker.h</td>
+                    <td>LogDataWorker</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Check if search is in progress</td>
+                </tr>
+                <tr>
+                    <td>doIndexing()</td>
+                    <td>src/LogDataWorker.h</td>
+                    <td>LogDataWorker</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Background indexing process</td>
+                </tr>
+                <tr>
+                    <td>doSearch()</td>
+                    <td>src/LogDataWorker.h</td>
+                    <td>LogDataWorker</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Background search process</td>
+                </tr>
+                
+                <!-- LogMainView Functions -->
+                <tr>
+                    <td>setLogDataWorker()</td>
+                    <td>src/LogMainView.h</td>
+                    <td>LogMainView</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Set LogDataWorker for line access</td>
+                </tr>
+                <tr>
+                    <td>setLineNumbersVisible()</td>
+                    <td>src/LogMainView.h</td>
+                    <td>LogMainView</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Show/hide line numbers</td>
+                </tr>
+                <tr>
+                    <td>setFont()</td>
+                    <td>src/LogMainView.h</td>
+                    <td>LogMainView</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Set display font</td>
+                </tr>
+                <tr>
+                    <td>setTabWidth()</td>
+                    <td>src/LogMainView.h</td>
+                    <td>LogMainView</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Set tab width</td>
+                </tr>
+                <tr>
+                    <td>clear()</td>
+                    <td>src/LogMainView.h</td>
+                    <td>LogMainView</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Clear the view</td>
+                </tr>
+                <tr>
+                    <td>updateViewport()</td>
+                    <td>src/LogMainView.h</td>
+                    <td>LogMainView</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Update viewport display</td>
+                </tr>
+                <tr>
+                    <td>getTotalLines()</td>
+                    <td>src/LogMainView.h</td>
+                    <td>LogMainView</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Get total lines count</td>
+                </tr>
+                <tr>
+                    <td>setTotalLines()</td>
+                    <td>src/LogMainView.h</td>
+                    <td>LogMainView</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Set total lines count</td>
+                </tr>
+                <tr>
+                    <td>scrollToLine()</td>
+                    <td>src/LogMainView.h</td>
+                    <td>LogMainView</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Scroll to specific line</td>
+                </tr>
+                <tr>
+                    <td>setHighlightedLine()</td>
+                    <td>src/LogMainView.h</td>
+                    <td>LogMainView</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Set highlighted line</td>
+                </tr>
+                <tr>
+                    <td>setSearchResults()</td>
+                    <td>src/LogMainView.h</td>
+                    <td>LogMainView</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Set search result highlighting</td>
+                </tr>
+                <tr>
+                    <td>clearSearchResults()</td>
+                    <td>src/LogMainView.h</td>
+                    <td>LogMainView</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Clear search result highlighting</td>
+                </tr>
+                <tr>
+                    <td>hasSearchResults()</td>
+                    <td>src/LogMainView.h</td>
+                    <td>LogMainView</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Check if search results exist</td>
+                </tr>
+                
+                <!-- ScintillaEdit Functions -->
+                <tr>
+                    <td>loadFile()</td>
+                    <td>src/scintillaedit.h</td>
+                    <td>ScintillaEdit</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Load file into Scintilla</td>
+                </tr>
+                <tr>
+                    <td>loadFileKloggStyle()</td>
+                    <td>src/scintillaedit.h</td>
+                    <td>ScintillaEdit</td>
+                    <td><span class="status-unused">UNUSED</span></td>
+                    <td>Load file in KLOGG style</td>
+                </tr>
+                <tr>
+                    <td>scrollToLine()</td>
+                    <td>src/scintillaedit.h</td>
+                    <td>ScintillaEdit</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Scroll to specific line</td>
+                </tr>
+                <tr>
+                    <td>highlightLine()</td>
+                    <td>src/scintillaedit.h</td>
+                    <td>ScintillaEdit</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Highlight specific line</td>
+                </tr>
+                <tr>
+                    <td>clearHighlight()</td>
+                    <td>src/scintillaedit.h</td>
+                    <td>ScintillaEdit</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Clear line highlighting</td>
+                </tr>
+                <tr>
+                    <td>getFileLineNumber()</td>
+                    <td>src/scintillaedit.h</td>
+                    <td>ScintillaEdit</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Get file line number</td>
+                </tr>
+                <tr>
+                    <td>getText()</td>
+                    <td>src/scintillaedit.h</td>
+                    <td>ScintillaEdit</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Get text content</td>
+                </tr>
+                <tr>
+                    <td>setText()</td>
+                    <td>src/scintillaedit.h</td>
+                    <td>ScintillaEdit</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Set text content</td>
+                </tr>
+                <tr>
+                    <td>appendText()</td>
+                    <td>src/scintillaedit.h</td>
+                    <td>ScintillaEdit</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Append text to content</td>
+                </tr>
+                <tr>
+                    <td>clearText()</td>
+                    <td>src/scintillaedit.h</td>
+                    <td>ScintillaEdit</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Clear text content</td>
+                </tr>
+                <tr>
+                    <td>setReadOnly()</td>
+                    <td>src/scintillaedit.h</td>
+                    <td>ScintillaEdit</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Set read-only mode</td>
+                </tr>
+                <tr>
+                    <td>setLineNumbers()</td>
+                    <td>src/scintillaedit.h</td>
+                    <td>ScintillaEdit</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Show/hide line numbers</td>
+                </tr>
+                <tr>
+                    <td>setWrapMode()</td>
+                    <td>src/scintillaedit.h</td>
+                    <td>ScintillaEdit</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Set text wrap mode</td>
+                </tr>
+                <tr>
+                    <td>setFont()</td>
+                    <td>src/scintillaedit.h</td>
+                    <td>ScintillaEdit</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Set display font</td>
+                </tr>
+                <tr>
+                    <td>setTheme()</td>
+                    <td>src/scintillaedit.h</td>
+                    <td>ScintillaEdit</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Set color theme</td>
+                </tr>
+                <tr>
+                    <td>setTabWidth()</td>
+                    <td>src/scintillaedit.h</td>
+                    <td>ScintillaEdit</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Set tab width</td>
+                </tr>
+                <tr>
+                    <td>setHighlightColor()</td>
+                    <td>src/scintillaedit.h</td>
+                    <td>ScintillaEdit</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Set highlight color</td>
+                </tr>
+                <tr>
+                    <td>setShowFileLineNumbers()</td>
+                    <td>src/scintillaedit.h</td>
+                    <td>ScintillaEdit</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Show file line numbers</td>
+                </tr>
+                <tr>
+                    <td>setChunkSize()</td>
+                    <td>src/scintillaedit.h</td>
+                    <td>ScintillaEdit</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Set chunk size for loading</td>
+                </tr>
+                <tr>
+                    <td>setFirstChunkSize()</td>
+                    <td>src/scintillaedit.h</td>
+                    <td>ScintillaEdit</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Set first chunk size</td>
+                </tr>
+                <tr>
+                    <td>startProgressiveLoading()</td>
+                    <td>src/scintillaedit.h</td>
+                    <td>ScintillaEdit</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Start progressive file loading</td>
+                </tr>
+                <tr>
+                    <td>loadNextChunk()</td>
+                    <td>src/scintillaedit.h</td>
+                    <td>ScintillaEdit</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Load next chunk of file</td>
+                </tr>
+                <tr>
+                    <td>abortProgressiveLoading()</td>
+                    <td>src/scintillaedit.h</td>
+                    <td>ScintillaEdit</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Abort progressive loading</td>
+                </tr>
+                <tr>
+                    <td>findText()</td>
+                    <td>src/scintillaedit.h</td>
+                    <td>ScintillaEdit</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Find text in content</td>
+                </tr>
+                <tr>
+                    <td>replaceText()</td>
+                    <td>src/scintillaedit.h</td>
+                    <td>ScintillaEdit</td>
+                    <td><span class="status-unused">UNUSED</span></td>
+                    <td>Replace text in content</td>
+                </tr>
+                <tr>
+                    <td>clearSearchIndicators()</td>
+                    <td>src/scintillaedit.h</td>
+                    <td>ScintillaEdit</td>
+                    <td><span class="status-used">USED</span></td>
+                    <td>Clear search indicators</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>🔄 Complete Function Flow Diagram</h2>
+        
+        <div class="flow-diagram">
+            <h3>📁 File Operations Flow</h3>
+            <div class="flow-section">
+                <h4>1. File Opening Process</h4>
+                <ul class="flow-list">
+                    <li>User clicks "Open File2" button</li>
+                    <li>MainWindow::openFile2() called</li>
+                    <li>MainWindow::KClean() - Clean previous state</li>
+                    <li>MainWindow::KOpenFile() - Start file loading</li>
+                    <li>LogDataWorker::startIndexing() - Begin indexing</li>
+                    <li>LogDataWorker::doIndexing() - Background indexing</li>
+                    <li>LogDataWorker::indexingFinished signal emitted</li>
+                    <li>MainWindow::KDisplayFile() - Display file content</li>
+                    <li>LogMainView::updateViewport() - Render content</li>
+                </ul>
+            </div>
+
+            <div class="flow-section">
+                <h4>2. Search Operations Flow</h4>
+                <ul class="flow-list">
+                    <li>User clicks "Find in File" button</li>
+                    <li>MainWindow::KFindInFile() called</li>
+                    <li>SearchDialog opens for configuration</li>
+                    <li>LogDataWorker::searchInFileSync() - Perform search</li>
+                    <li>LogDataWorker::doSearch() - Background search</li>
+                    <li>LogDataWorker::searchFinished signal emitted</li>
+                    <li>MainWindow::onSearchFinished() - Handle results</li>
+                    <li>LogMainView::setSearchResults() - Highlight matches</li>
+                </ul>
+            </div>
+
+            <div class="flow-section">
+                <h4>3. Navigation Operations Flow</h4>
+                <ul class="flow-list">
+                    <li>User clicks "Scroll to Line" button</li>
+                    <li>MainWindow::KScrollToLine() called</li>
+                    <li>QInputDialog opens for line number input</li>
+                    <li>Line number validation performed</li>
+                    <li>LogMainView::scrollToLine() - Scroll to line</li>
+                    <li>LogMainView::setHighlightedLine() - Highlight line</li>
+                </ul>
+            </div>
+
+            <div class="flow-section">
+                <h4>4. Background Processing Flow</h4>
+                <ul class="flow-list">
+                    <li>LogDataWorker thread starts</li>
+                    <li>LogDataWorker::parseDataBlock() - Parse file blocks</li>
+                    <li>LogDataWorker::findNextLineFeed() - Find line boundaries</li>
+                    <li>LogDataWorker::loadLineContent() - Load line data</li>
+                    <li>Progress signals emitted every 1000 lines</li>
+                    <li>UI updated via signal-slot mechanism</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>📂 File Structure and Function Locations</h2>
+        
+        <div class="file-section">
+            <h4>src/mainwindow.h</h4>
+            <p><strong>MainWindow Class:</strong> Core application window with UI management and K-functions</p>
+            <ul>
+                <li><strong>K-Functions:</strong> KClean(), KOpenFile(), KDisplayFile(), KFindInFile(), KScrollToLine()</li>
+                <li><strong>UI Functions:</strong> openFile(), openFile2(), searchText(), clearSearch()</li>
+                <li><strong>Settings Functions:</strong> loadSettings(), saveSettings(), saveFindInFileSettings()</li>
+                <li><strong>Search Functions:</strong> performRipgrepSearch(), performBuiltinSearch()</li>
+                <li><strong>Setup Functions:</strong> setupUI(), setupMenuBar(), setupToolBar()</li>
+            </ul>
+        </div>
+
+        <div class="file-section">
+            <h4>src/LogDataWorker.h</h4>
+            <p><strong>LogDataWorker Class:</strong> Background thread for file processing and search operations</p>
+            <ul>
+                <li><strong>Indexing Functions:</strong> startIndexing(), doIndexing(), isIndexing()</li>
+                <li><strong>Line Access Functions:</strong> getLine(), getLines(), getTotalLines()</li>
+                <li><strong>Search Functions:</strong> searchInFile(), searchInFileSync(), doSearch()</li>
+                <li><strong>State Functions:</strong> isFileLoaded(), getFilePath(), interrupt()</li>
+                <li><strong>Result Functions:</strong> getSearchResults(), clearSearchResults(), hasSearchResults()</li>
+            </ul>
+        </div>
+
+        <div class="file-section">
+            <h4>src/LogMainView.h</h4>
+            <p><strong>LogMainView Class:</strong> Custom log viewer widget for KLOGG-style display</p>
+            <ul>
+                <li><strong>Setup Functions:</strong> setLogDataWorker(), setLineNumbersVisible(), setFont()</li>
+                <li><strong>Display Functions:</strong> updateViewport(), clear(), setTotalLines()</li>
+                <li><strong>Navigation Functions:</strong> scrollToLine(), setHighlightedLine()</li>
+                <li><strong>Search Functions:</strong> setSearchResults(), clearSearchResults(), hasSearchResults()</li>
+                <li><strong>Event Functions:</strong> paintEvent(), resizeEvent(), wheelEvent(), mousePressEvent()</li>
+            </ul>
+        </div>
+
+        <div class="file-section">
+            <h4>src/scintillaedit.h</h4>
+            <p><strong>ScintillaEdit Class:</strong> Scintilla-based text editor component</p>
+            <ul>
+                <li><strong>File Functions:</strong> loadFile(), loadFileKloggStyle(), clearText()</li>
+                <li><strong>Navigation Functions:</strong> scrollToLine(), highlightLine(), clearHighlight()</li>
+                <li><strong>Text Functions:</strong> getText(), setText(), appendText()</li>
+                <li><strong>Display Functions:</strong> setReadOnly(), setLineNumbers(), setFont(), setTheme()</li>
+                <li><strong>Loading Functions:</strong> startProgressiveLoading(), loadNextChunk(), abortProgressiveLoading()</li>
+                <li><strong>Search Functions:</strong> findText(), replaceText(), clearSearchIndicators()</li>
+            </ul>
+        </div>
+
+        <h2>📈 Function Usage Statistics</h2>
+        
+        <div class="function-category">
+            <h3>✅ Used Functions (75%)</h3>
+            <p>Functions that are actively used in the application:</p>
+            <ul>
+                <li><strong>MainWindow:</strong> 15/20 functions used</li>
+                <li><strong>LogDataWorker:</strong> 12/15 functions used</li>
+                <li><strong>LogMainView:</strong> 12/12 functions used</li>
+                <li><strong>ScintillaEdit:</strong> 18/22 functions used</li>
+            </ul>
+        </div>
+
+        <div class="function-category">
+            <h3>🔧 K-Functions (5%)</h3>
+            <p>Special K-functions for modular file operations:</p>
+            <ul>
+                <li><strong>KClean():</strong> Centralized cleanup</li>
+                <li><strong>KOpenFile():</strong> File indexing and loading</li>
+                <li><strong>KDisplayFile():</strong> File display and rendering</li>
+                <li><strong>KFindInFile():</strong> Find in file functionality</li>
+                <li><strong>KScrollToLine():</strong> Scroll to specific line</li>
+            </ul>
+        </div>
+
+        <div class="function-category">
+            <h3>❌ Unused Functions (20%)</h3>
+            <p>Functions that are declared but not currently used:</p>
+            <ul>
+                <li><strong>MainWindow:</strong> saveFile(), showPreferences(), showSearchParameters()</li>
+                <li><strong>LogDataWorker:</strong> searchInFile() (async version)</li>
+                <li><strong>ScintillaEdit:</strong> loadFileKloggStyle(), replaceText()</li>
+            </ul>
+        </div>
+
+        <h2>🎯 Key Function Categories</h2>
+        
+        <div class="flow-section">
+            <h4>🔍 Search & Find Functions</h4>
+            <ul>
+                <li><strong>MainWindow:</strong> searchText(), clearSearch(), KFindInFile(), performRipgrepSearch()</li>
+                <li><strong>LogDataWorker:</strong> searchInFileSync(), doSearch(), getSearchResults()</li>
+                <li><strong>LogMainView:</strong> setSearchResults(), clearSearchResults()</li>
+                <li><strong>ScintillaEdit:</strong> findText(), clearSearchIndicators()</li>
+            </ul>
+        </div>
+
+        <div class="flow-section">
+            <h4>📁 File Operations</h4>
+            <ul>
+                <li><strong>MainWindow:</strong> openFile(), openFile2(), KOpenFile(), KDisplayFile()</li>
+                <li><strong>LogDataWorker:</strong> startIndexing(), doIndexing(), getLine(), getLines()</li>
+                <li><strong>ScintillaEdit:</strong> loadFile(), startProgressiveLoading(), loadNextChunk()</li>
+            </ul>
+        </div>
+
+        <div class="flow-section">
+            <h4>🧹 Cleanup & Reset Functions</h4>
+            <ul>
+                <li><strong>MainWindow:</strong> KClean()</li>
+                <li><strong>LogDataWorker:</strong> interrupt(), clearSearchResults()</li>
+                <li><strong>LogMainView:</strong> clear(), clearSearchResults()</li>
+                <li><strong>ScintillaEdit:</strong> clearText(), clearHighlight(), abortProgressiveLoading()</li>
+            </ul>
+        </div>
+
+        <div class="flow-section">
+            <h4>⚙️ Settings & Configuration</h4>
+            <ul>
+                <li><strong>MainWindow:</strong> loadSettings(), saveSettings(), saveFindInFileSettings()</li>
+                <li><strong>LogMainView:</strong> setFont(), setTabWidth(), setLineNumbersVisible()</li>
+                <li><strong>ScintillaEdit:</strong> setFont(), setTheme(), setTabWidth(), setReadOnly()</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html> 
